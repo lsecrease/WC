@@ -241,6 +241,9 @@ public class XMSegmentedControl: UIView {
                     tab.setTitle(segmentTitle[i], forState: .Normal)
                     tab.setTitleColor(i == selectedSegment ? highlightTint : tint, forState: .Normal)
                     tab.titleLabel?.font = font
+                    tab.titleLabel?.numberOfLines = 2
+                    tab.titleLabel?.textAlignment = .Center
+                    tab.titleEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
                     
                 case .Hybrid:
                     /// Modify `insetAmount` to change spacing between borders, icon, and text

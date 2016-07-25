@@ -695,6 +695,13 @@
                                     <navigationItem title="Your Orders" id="SNe-1O-8X0"/>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-QE-zfx" customClass="XMSegmentedControl">
+                                <rect key="frame" x="0.0" y="70" width="600" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="lCh-Bx-x3S"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-cU-K9n">
                                 <rect key="frame" x="0.0" y="130" width="600" height="470"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -749,13 +756,6 @@
                                     <outlet property="delegate" destination="DyU-J6-4hO" id="ADK-S6-Qfe"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-QE-zfx" customClass="XMSegmentedControl">
-                                <rect key="frame" x="0.0" y="70" width="600" height="55"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="lCh-Bx-x3S"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1270,6 +1270,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="117" id="7iL-cI-mjD"/>
                                             <constraint firstItem="Kpf-yJ-ai6" firstAttribute="centerX" secondItem="1xN-hu-mxo" secondAttribute="centerX" id="NH1-TQ-KvP"/>
                                             <constraint firstItem="Kpf-yJ-ai6" firstAttribute="centerY" secondItem="1xN-hu-mxo" secondAttribute="centerY" constant="-5" id="pli-nk-hb0"/>
                                         </constraints>
@@ -1323,7 +1324,7 @@
                                         <rect key="frame" x="0.0" y="182" width="600" height="60"/>
                                         <color key="backgroundColor" red="0.35137432813644409" green="0.82300287485122681" blue="0.75891906023025513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="ZXk-Hc-awy"/>
+                                            <constraint firstAttribute="height" constant="60" id="ZXk-Hc-awy"/>
                                             <constraint firstAttribute="height" constant="60" id="dlC-QM-y08"/>
                                         </constraints>
                                     </view>
@@ -1343,7 +1344,6 @@
                                     </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="1xN-hu-mxo" firstAttribute="height" secondItem="XBg-ue-DZV" secondAttribute="height" multiplier="0.22" id="BIl-Ej-Cp0"/>
                                     <constraint firstAttribute="trailing" secondItem="WHf-ZI-IKF" secondAttribute="trailing" id="Mh0-Rd-tk5"/>
                                     <constraint firstItem="WHf-ZI-IKF" firstAttribute="leading" secondItem="XBg-ue-DZV" secondAttribute="leading" id="YjA-E3-WXw"/>
                                 </constraints>
