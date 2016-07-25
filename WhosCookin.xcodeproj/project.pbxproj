@@ -8,13 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		C03291081D439D2B00798825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03291071D439D2B00798825 /* AppDelegate.swift */; };
-		C032910A1D439D2B00798825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03291091D439D2B00798825 /* ViewController.swift */; };
 		C032910D1D439D2B00798825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C032910B1D439D2B00798825 /* Main.storyboard */; };
 		C03291101D439D2B00798825 /* WhosCookin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C032910E1D439D2B00798825 /* WhosCookin.xcdatamodeld */; };
 		C03291121D439D2B00798825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03291111D439D2B00798825 /* Assets.xcassets */; };
 		C03291151D439D2B00798825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03291131D439D2B00798825 /* LaunchScreen.storyboard */; };
 		C03291201D439D2B00798825 /* WhosCookinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032911F1D439D2B00798825 /* WhosCookinTests.swift */; };
 		C032912B1D439D2B00798825 /* WhosCookinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032912A1D439D2B00798825 /* WhosCookinUITests.swift */; };
+		C0D175461D46247A002A2A93 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D175451D46247A002A2A93 /* ProfileViewController.swift */; };
+		C0F7847B1D454A4700E982E7 /* FoodCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784751D454A4700E982E7 /* FoodCategoryViewController.swift */; };
+		C0F7847C1D454A4700E982E7 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784761D454A4700E982E7 /* LocationSearchViewController.swift */; };
+		C0F7847D1D454A4700E982E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784771D454A4700E982E7 /* LoginViewController.swift */; };
+		C0F7847E1D454A4700E982E7 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784781D454A4700E982E7 /* OrderViewController.swift */; };
+		C0F7847F1D454A4700E982E7 /* PendingOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784791D454A4700E982E7 /* PendingOrderDetailViewController.swift */; };
+		C0F784801D454A4700E982E7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F7847A1D454A4700E982E7 /* SignUpViewController.swift */; };
+		C0F784841D454B6000E982E7 /* PendingOrderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F784831D454B6000E982E7 /* PendingOrderItemCell.xib */; };
+		C0F7848C1D454F7600E982E7 /* CancelledOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784861D454F7600E982E7 /* CancelledOrderTableViewCell.swift */; };
+		C0F7848D1D454F7600E982E7 /* FoodCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784871D454F7600E982E7 /* FoodCategoryCollectionViewCell.swift */; };
+		C0F7848E1D454F7600E982E7 /* FulfilledOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784881D454F7600E982E7 /* FulfilledOrderTableViewCell.swift */; };
+		C0F7848F1D454F7600E982E7 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784891D454F7600E982E7 /* OrderTableViewCell.swift */; };
+		C0F784901D454F7600E982E7 /* PendingOrderItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F7848A1D454F7600E982E7 /* PendingOrderItemCell.swift */; };
+		C0F784911D454F7600E982E7 /* PendingOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F7848B1D454F7600E982E7 /* PendingOrderTableViewCell.swift */; };
+		C0F784951D454FAE00E982E7 /* CancelledOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F784921D454FAE00E982E7 /* CancelledOrderTableViewCell.xib */; };
+		C0F784961D454FAE00E982E7 /* FulfilledOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F784931D454FAE00E982E7 /* FulfilledOrderTableViewCell.xib */; };
+		C0F784971D454FAE00E982E7 /* PendingOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F784941D454FAE00E982E7 /* PendingOrderTableViewCell.xib */; };
+		C0F7849B1D45500700E982E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0F7849A1D45500700E982E7 /* Info.plist */; };
+		C0F784A11D4550B900E982E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784A01D4550B900E982E7 /* Extensions.swift */; };
+		C0F784A41D45550F00E982E7 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F784A31D45550F00E982E7 /* OrderTableViewCell.xib */; };
+		EA6BCB255132576F4590A20C /* Pods_WhosCookin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0758FA2479BA3420D98E114 /* Pods_WhosCookin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +55,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0758FA2479BA3420D98E114 /* Pods_WhosCookin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhosCookin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03291041D439D2B00798825 /* WhosCookin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhosCookin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03291071D439D2B00798825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C03291091D439D2B00798825 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C032910C1D439D2B00798825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C032910F1D439D2B00798825 /* WhosCookin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhosCookin.xcdatamodel; sourceTree = "<group>"; };
 		C03291111D439D2B00798825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03291141D439D2B00798825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C03291161D439D2B00798825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C032911B1D439D2B00798825 /* WhosCookinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhosCookinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C032911F1D439D2B00798825 /* WhosCookinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhosCookinTests.swift; sourceTree = "<group>"; };
 		C03291211D439D2B00798825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C03291261D439D2B00798825 /* WhosCookinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhosCookinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C032912A1D439D2B00798825 /* WhosCookinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhosCookinUITests.swift; sourceTree = "<group>"; };
 		C032912C1D439D2B00798825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0D175451D46247A002A2A93 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C0F784751D454A4700E982E7 /* FoodCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodCategoryViewController.swift; path = Controllers/FoodCategoryViewController.swift; sourceTree = "<group>"; };
+		C0F784761D454A4700E982E7 /* LocationSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationSearchViewController.swift; path = Controllers/LocationSearchViewController.swift; sourceTree = "<group>"; };
+		C0F784771D454A4700E982E7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		C0F784781D454A4700E982E7 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderViewController.swift; path = Controllers/OrderViewController.swift; sourceTree = "<group>"; };
+		C0F784791D454A4700E982E7 /* PendingOrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PendingOrderDetailViewController.swift; path = Controllers/PendingOrderDetailViewController.swift; sourceTree = "<group>"; };
+		C0F7847A1D454A4700E982E7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = Controllers/SignUpViewController.swift; sourceTree = "<group>"; };
+		C0F784831D454B6000E982E7 /* PendingOrderItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PendingOrderItemCell.xib; path = Views/Xibs/PendingOrderItemCell.xib; sourceTree = "<group>"; };
+		C0F784861D454F7600E982E7 /* CancelledOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CancelledOrderTableViewCell.swift; path = "Views/Swift Files/CancelledOrderTableViewCell.swift"; sourceTree = "<group>"; };
+		C0F784871D454F7600E982E7 /* FoodCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodCategoryCollectionViewCell.swift; path = "Views/Swift Files/FoodCategoryCollectionViewCell.swift"; sourceTree = "<group>"; };
+		C0F784881D454F7600E982E7 /* FulfilledOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FulfilledOrderTableViewCell.swift; path = "Views/Swift Files/FulfilledOrderTableViewCell.swift"; sourceTree = "<group>"; };
+		C0F784891D454F7600E982E7 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderTableViewCell.swift; path = "Views/Swift Files/OrderTableViewCell.swift"; sourceTree = "<group>"; };
+		C0F7848A1D454F7600E982E7 /* PendingOrderItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PendingOrderItemCell.swift; path = "Views/Swift Files/PendingOrderItemCell.swift"; sourceTree = "<group>"; };
+		C0F7848B1D454F7600E982E7 /* PendingOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PendingOrderTableViewCell.swift; path = "Views/Swift Files/PendingOrderTableViewCell.swift"; sourceTree = "<group>"; };
+		C0F784921D454FAE00E982E7 /* CancelledOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CancelledOrderTableViewCell.xib; path = Views/Xibs/CancelledOrderTableViewCell.xib; sourceTree = "<group>"; };
+		C0F784931D454FAE00E982E7 /* FulfilledOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FulfilledOrderTableViewCell.xib; path = Views/Xibs/FulfilledOrderTableViewCell.xib; sourceTree = "<group>"; };
+		C0F784941D454FAE00E982E7 /* PendingOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PendingOrderTableViewCell.xib; path = Views/Xibs/PendingOrderTableViewCell.xib; sourceTree = "<group>"; };
+		C0F7849A1D45500700E982E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/plists/Info.plist; sourceTree = "<group>"; };
+		C0F784A01D4550B900E982E7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Utility/Extensions/Extensions.swift; sourceTree = "<group>"; };
+		C0F784A31D45550F00E982E7 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderTableViewCell.xib; path = Views/Xibs/OrderTableViewCell.xib; sourceTree = "<group>"; };
+		E9452C253AFC91652F9BB101 /* Pods-WhosCookin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosCookin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhosCookin/Pods-WhosCookin.debug.xcconfig"; sourceTree = "<group>"; };
+		EE3489D845F401BB66EA9BEE /* Pods-WhosCookin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosCookin.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhosCookin/Pods-WhosCookin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6BCB255132576F4590A20C /* Pods_WhosCookin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +125,8 @@
 				C032911E1D439D2B00798825 /* WhosCookinTests */,
 				C03291291D439D2B00798825 /* WhosCookinUITests */,
 				C03291051D439D2B00798825 /* Products */,
+				E70BB8F8728951AEB812EEA9 /* Pods */,
+				E2011178AE1613F738A110A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +143,14 @@
 		C03291061D439D2B00798825 /* WhosCookin */ = {
 			isa = PBXGroup;
 			children = (
+				C0F7849C1D45503F00E982E7 /* Utility */,
+				C0F784981D454FD500E982E7 /* Resources */,
+				C0F784811D454B3000E982E7 /* Views */,
+				C0F784741D454A3D00E982E7 /* Controllers */,
 				C03291071D439D2B00798825 /* AppDelegate.swift */,
-				C03291091D439D2B00798825 /* ViewController.swift */,
-				C032910B1D439D2B00798825 /* Main.storyboard */,
 				C03291111D439D2B00798825 /* Assets.xcassets */,
-				C03291131D439D2B00798825 /* LaunchScreen.storyboard */,
-				C03291161D439D2B00798825 /* Info.plist */,
 				C032910E1D439D2B00798825 /* WhosCookin.xcdatamodeld */,
+				C0F7849A1D45500700E982E7 /* Info.plist */,
 			);
 			path = WhosCookin;
 			sourceTree = "<group>";
@@ -128,6 +173,112 @@
 			path = WhosCookinUITests;
 			sourceTree = "<group>";
 		};
+		C0F784741D454A3D00E982E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0F784751D454A4700E982E7 /* FoodCategoryViewController.swift */,
+				C0F784761D454A4700E982E7 /* LocationSearchViewController.swift */,
+				C0F784771D454A4700E982E7 /* LoginViewController.swift */,
+				C0F784781D454A4700E982E7 /* OrderViewController.swift */,
+				C0F784791D454A4700E982E7 /* PendingOrderDetailViewController.swift */,
+				C0F7847A1D454A4700E982E7 /* SignUpViewController.swift */,
+				C0D175451D46247A002A2A93 /* ProfileViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C0F784811D454B3000E982E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0F784A21D45517A00E982E7 /* Storyboards */,
+				C0F784851D454BF100E982E7 /* Swift Files */,
+				C0F784821D454B4800E982E7 /* Xibs */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C0F784821D454B4800E982E7 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				C0F784921D454FAE00E982E7 /* CancelledOrderTableViewCell.xib */,
+				C0F784931D454FAE00E982E7 /* FulfilledOrderTableViewCell.xib */,
+				C0F784A31D45550F00E982E7 /* OrderTableViewCell.xib */,
+				C0F784941D454FAE00E982E7 /* PendingOrderTableViewCell.xib */,
+				C0F784831D454B6000E982E7 /* PendingOrderItemCell.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		C0F784851D454BF100E982E7 /* Swift Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0F784861D454F7600E982E7 /* CancelledOrderTableViewCell.swift */,
+				C0F784871D454F7600E982E7 /* FoodCategoryCollectionViewCell.swift */,
+				C0F784881D454F7600E982E7 /* FulfilledOrderTableViewCell.swift */,
+				C0F784891D454F7600E982E7 /* OrderTableViewCell.swift */,
+				C0F7848A1D454F7600E982E7 /* PendingOrderItemCell.swift */,
+				C0F7848B1D454F7600E982E7 /* PendingOrderTableViewCell.swift */,
+			);
+			name = "Swift Files";
+			sourceTree = "<group>";
+		};
+		C0F784981D454FD500E982E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0F784991D454FF300E982E7 /* plists */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C0F784991D454FF300E982E7 /* plists */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = plists;
+			sourceTree = "<group>";
+		};
+		C0F7849C1D45503F00E982E7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C0F7849D1D45504B00E982E7 /* Extensions */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		C0F7849D1D45504B00E982E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C0F784A01D4550B900E982E7 /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C0F784A21D45517A00E982E7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C032910B1D439D2B00798825 /* Main.storyboard */,
+				C03291131D439D2B00798825 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E2011178AE1613F738A110A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0758FA2479BA3420D98E114 /* Pods_WhosCookin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E70BB8F8728951AEB812EEA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9452C253AFC91652F9BB101 /* Pods-WhosCookin.debug.xcconfig */,
+				EE3489D845F401BB66EA9BEE /* Pods-WhosCookin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C032912F1D439D2B00798825 /* Build configuration list for PBXNativeTarget "WhosCookin" */;
 			buildPhases = (
+				89A79DEE50EA0315B2640064 /* [CP] Check Pods Manifest.lock */,
 				C03291001D439D2B00798825 /* Sources */,
 				C03291011D439D2B00798825 /* Frameworks */,
 				C03291021D439D2B00798825 /* Resources */,
+				7A248F7FD0F3A37645DD8120 /* [CP] Embed Pods Frameworks */,
+				F12EE2F885191BE446A66440 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,8 +386,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F7849B1D45500700E982E7 /* Info.plist in Resources */,
 				C03291151D439D2B00798825 /* LaunchScreen.storyboard in Resources */,
+				C0F784971D454FAE00E982E7 /* PendingOrderTableViewCell.xib in Resources */,
+				C0F784A41D45550F00E982E7 /* OrderTableViewCell.xib in Resources */,
 				C03291121D439D2B00798825 /* Assets.xcassets in Resources */,
+				C0F784961D454FAE00E982E7 /* FulfilledOrderTableViewCell.xib in Resources */,
+				C0F784841D454B6000E982E7 /* PendingOrderItemCell.xib in Resources */,
+				C0F784951D454FAE00E982E7 /* CancelledOrderTableViewCell.xib in Resources */,
 				C032910D1D439D2B00798825 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +414,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7A248F7FD0F3A37645DD8120 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhosCookin/Pods-WhosCookin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89A79DEE50EA0315B2640064 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F12EE2F885191BE446A66440 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhosCookin/Pods-WhosCookin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C03291001D439D2B00798825 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C032910A1D439D2B00798825 /* ViewController.swift in Sources */,
+				C0F7848E1D454F7600E982E7 /* FulfilledOrderTableViewCell.swift in Sources */,
+				C0F784801D454A4700E982E7 /* SignUpViewController.swift in Sources */,
 				C03291081D439D2B00798825 /* AppDelegate.swift in Sources */,
+				C0F7847C1D454A4700E982E7 /* LocationSearchViewController.swift in Sources */,
 				C03291101D439D2B00798825 /* WhosCookin.xcdatamodeld in Sources */,
+				C0F784901D454F7600E982E7 /* PendingOrderItemCell.swift in Sources */,
+				C0D175461D46247A002A2A93 /* ProfileViewController.swift in Sources */,
+				C0F784911D454F7600E982E7 /* PendingOrderTableViewCell.swift in Sources */,
+				C0F7847D1D454A4700E982E7 /* LoginViewController.swift in Sources */,
+				C0F7848F1D454F7600E982E7 /* OrderTableViewCell.swift in Sources */,
+				C0F7848C1D454F7600E982E7 /* CancelledOrderTableViewCell.swift in Sources */,
+				C0F784A11D4550B900E982E7 /* Extensions.swift in Sources */,
+				C0F7848D1D454F7600E982E7 /* FoodCategoryCollectionViewCell.swift in Sources */,
+				C0F7847F1D454A4700E982E7 /* PendingOrderDetailViewController.swift in Sources */,
+				C0F7847B1D454A4700E982E7 /* FoodCategoryViewController.swift in Sources */,
+				C0F7847E1D454A4700E982E7 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +622,7 @@
 		};
 		C03291301D439D2B00798825 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9452C253AFC91652F9BB101 /* Pods-WhosCookin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhosCookin/Info.plist;
@@ -412,6 +634,7 @@
 		};
 		C03291311D439D2B00798825 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE3489D845F401BB66EA9BEE /* Pods-WhosCookin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhosCookin/Info.plist;
@@ -486,6 +709,7 @@
 				C03291311D439D2B00798825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C03291321D439D2B00798825 /* Build configuration list for PBXNativeTarget "WhosCookinTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +718,7 @@
 				C03291341D439D2B00798825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C03291351D439D2B00798825 /* Build configuration list for PBXNativeTarget "WhosCookinUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +727,7 @@
 				C03291371D439D2B00798825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
