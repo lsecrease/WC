@@ -10,22 +10,29 @@ import UIKit
 import XMSegmentedControl
 
 class ProfileViewController: UIViewController {
+    
+    let cellId = "idCellProfileMealInventory"
 
     @IBOutlet weak var segmentedControl: XMSegmentedControl!
-    @IBOutlet weak var segmentView: UIView!
+    @IBOutlet weak var mealInventoryTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureSegmentedControl()
+        registerCellNibs()
         
+    }
+    
+    func registerCellNibs() {
+        mealInventoryTable.registerNib(UINib(nibName: "MealInventoryTableViewCell", bundle: nil), forCellReuseIdentifier: cellId)
     }
     
     func configureSegmentedControl() {
         
         let frame = CGRect(x: 0, y: 252, width: self.view.frame.width, height: 60)
         
-        let segmentTitles = ["Meals Inventory", "Meals Ordered", "Meal Ratings"]
+        let segmentTitles = ["Meal Inventory", "Meals Ordered", "Meal Ratings"]
         var attributedTitles = [NSMutableAttributedString]()
         
         for title in segmentTitles {
@@ -45,6 +52,36 @@ class ProfileViewController: UIViewController {
     }
     
 }
+
+
+// MARK: - UITableView Datasource and Delegate functions
+
+extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = mealInventoryTable.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! MealInventoryTableViewCell
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        return 100
+        
+    }
+}
+
+
+// MARK: - XMSegmentedControl Dealegate
 
 extension ProfileViewController: XMSegmentedControlDelegate {
     

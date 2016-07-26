@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03045AB1D46981B00E8BE12 /* MealInventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03045AA1D46981B00E8BE12 /* MealInventoryTableViewCell.swift */; };
+		C03045AD1D46986800E8BE12 /* MealInventoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C03045AC1D46986800E8BE12 /* MealInventoryTableViewCell.xib */; };
 		C03291081D439D2B00798825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03291071D439D2B00798825 /* AppDelegate.swift */; };
 		C032910D1D439D2B00798825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C032910B1D439D2B00798825 /* Main.storyboard */; };
 		C03291101D439D2B00798825 /* WhosCookin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C032910E1D439D2B00798825 /* WhosCookin.xcdatamodeld */; };
@@ -56,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		A0758FA2479BA3420D98E114 /* Pods_WhosCookin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhosCookin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03045AA1D46981B00E8BE12 /* MealInventoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealInventoryTableViewCell.swift; sourceTree = "<group>"; };
+		C03045AC1D46986800E8BE12 /* MealInventoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealInventoryTableViewCell.xib; sourceTree = "<group>"; };
 		C03291041D439D2B00798825 /* WhosCookin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhosCookin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03291071D439D2B00798825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C032910C1D439D2B00798825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				C0F784A31D45550F00E982E7 /* OrderTableViewCell.xib */,
 				C0F784941D454FAE00E982E7 /* PendingOrderTableViewCell.xib */,
 				C0F784831D454B6000E982E7 /* PendingOrderItemCell.xib */,
+				C03045AC1D46986800E8BE12 /* MealInventoryTableViewCell.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				C0F784891D454F7600E982E7 /* OrderTableViewCell.swift */,
 				C0F7848A1D454F7600E982E7 /* PendingOrderItemCell.swift */,
 				C0F7848B1D454F7600E982E7 /* PendingOrderTableViewCell.swift */,
+				C03045AA1D46981B00E8BE12 /* MealInventoryTableViewCell.swift */,
 			);
 			name = "Swift Files";
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 				C03291121D439D2B00798825 /* Assets.xcassets in Resources */,
 				C0F784961D454FAE00E982E7 /* FulfilledOrderTableViewCell.xib in Resources */,
 				C0F784841D454B6000E982E7 /* PendingOrderItemCell.xib in Resources */,
+				C03045AD1D46986800E8BE12 /* MealInventoryTableViewCell.xib in Resources */,
 				C0F784951D454FAE00E982E7 /* CancelledOrderTableViewCell.xib in Resources */,
 				C032910D1D439D2B00798825 /* Main.storyboard in Resources */,
 			);
@@ -476,6 +483,7 @@
 				C0D175461D46247A002A2A93 /* ProfileViewController.swift in Sources */,
 				C0F784911D454F7600E982E7 /* PendingOrderTableViewCell.swift in Sources */,
 				C0F7847D1D454A4700E982E7 /* LoginViewController.swift in Sources */,
+				C03045AB1D46981B00E8BE12 /* MealInventoryTableViewCell.swift in Sources */,
 				C0F7848F1D454F7600E982E7 /* OrderTableViewCell.swift in Sources */,
 				C0F7848C1D454F7600E982E7 /* CancelledOrderTableViewCell.swift in Sources */,
 				C0F784A11D4550B900E982E7 /* Extensions.swift in Sources */,

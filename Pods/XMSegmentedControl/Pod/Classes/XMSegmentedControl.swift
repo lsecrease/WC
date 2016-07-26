@@ -241,10 +241,27 @@ public class XMSegmentedControl: UIView {
                     tab.setTitle(segmentTitle[i], forState: .Normal)
                     tab.setTitleColor(i == selectedSegment ? highlightTint : tint, forState: .Normal)
                     tab.titleLabel?.font = font
-                    tab.titleLabel?.numberOfLines = 2
+                    
+                    
+                    // ******************* MODIFICATIONS - BEGIN  ******************* ******************* ******************* //
+                    
+                    tab.titleLabel?.numberOfLines = 0
                     tab.titleLabel?.textAlignment = .Center
                     tab.titleEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
                     
+                    // Apply custom spacing if segment strings are capitalized
+                    if let capStr = tab.titleLabel?.text?.uppercaseString {
+                        if tab.titleLabel!.text == capStr {
+                            let attributedString = NSMutableAttributedString(string: tab.titleLabel!.text!)
+                            attributedString.addAttribute(NSKernAttributeName, value: 1.0, range: NSRange(location: 0, length: (tab.titleLabel!.text?.characters.count)!))
+                            tab.titleLabel!.attributedText = attributedString
+                        }
+                        
+                    }
+                    
+                    // ******************* MODIFICATIONS - END  ******************* ******************* ******************* //
+                    
+                
                 case .Hybrid:
                     /// Modify `insetAmount` to change spacing between borders, icon, and text
                     /// Hybrid Mode sets insets. In a 44 height control the image becomes 20x20. The imageView in the UIButton is set to ScaleAspectFit to preserve aspect ratio and resize to fit.
