@@ -44,7 +44,7 @@ class ProfileViewController: UIViewController {
         segmentedControl.delegate = self
         segmentedControl.backgroundColor = UIColor.whiteColor()
         segmentedControl.highlightColor = UIColor(red: 80/255, green: 210/255, blue: 194/255, alpha: 1.0)
-        segmentedControl.highlightTint = UIColor.blackColor()
+        segmentedControl.highlightTint = UIColor.whiteColor()
         segmentedControl.tint = UIColor.blackColor()
         segmentedControl.font = UIFont(name: "Avenir-Book", size: 18.0)!
         
