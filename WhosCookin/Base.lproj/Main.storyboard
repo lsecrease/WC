@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YzW-eT-o4f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BH9-Si-ebt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -670,7 +670,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xj3-xS-XoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-151" y="-599"/>
+            <point key="canvasLocation" x="-260" y="-562"/>
         </scene>
         <!--Order View Controller-->
         <scene sceneID="GFv-Q8-Ibu">
@@ -801,16 +801,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FX-vq-ba4">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="EOW-xI-peF"/>
-                                </constraints>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="Sign Up" id="PPf-S0-dO7"/>
-                                </items>
-                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0i-qp-MbB">
                                 <rect key="frame" x="0.0" y="70" width="600" height="530"/>
                                 <subviews>
@@ -820,8 +810,8 @@
                                             <view contentMode="scaleToFill" verticalHuggingPriority="260" verticalCompressionResistancePriority="745" translatesAutoresizingMaskIntoConstraints="NO" id="k3u-HC-CuH" userLabel="Image Stack">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="133"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3d-h0-qbi" userLabel="Avatar Container">
-                                                        <rect key="frame" x="245" y="12" width="110" height="110"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3d-h0-qbi" userLabel="Avatar Container">
+                                                        <rect key="frame" x="245" y="16" width="110" height="110"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="YAL-Pc-Oqg">
                                                                 <rect key="frame" x="5" y="5" width="100" height="100"/>
@@ -1020,8 +1010,8 @@
                                             <view contentMode="scaleToFill" verticalHuggingPriority="300" verticalCompressionResistancePriority="740" translatesAutoresizingMaskIntoConstraints="NO" id="m92-RF-BEq" userLabel="Button Stack">
                                                 <rect key="frame" x="0.0" y="353" width="600" height="177"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjw-1a-fby" userLabel="Button Area">
-                                                        <rect key="frame" x="28" y="36" width="545" height="118"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cjw-1a-fby" userLabel="Button Area">
+                                                        <rect key="frame" x="28" y="37" width="545" height="118"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXv-D0-Fte" userLabel="Sign Up Container">
                                                                 <rect key="frame" x="163" y="88" width="219" height="30"/>
@@ -1106,6 +1096,16 @@
                                     <constraint firstItem="pHW-4N-MGj" firstAttribute="centerX" secondItem="j0i-qp-MbB" secondAttribute="centerX" id="ryL-w4-vqU"/>
                                 </constraints>
                             </scrollView>
+                            <navigationBar clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FX-vq-ba4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="EOW-xI-peF"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Sign Up" id="PPf-S0-dO7"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1231,17 +1231,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lho-ib-z98">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="S5V-RA-yFE"/>
-                                    <constraint firstAttribute="height" constant="70" id="h4d-lG-Nem"/>
-                                </constraints>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="Profile" id="0O3-iI-bDc"/>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XBg-ue-DZV">
                                 <rect key="frame" x="0.0" y="70" width="600" height="530"/>
                                 <subviews>
@@ -1360,6 +1349,16 @@
                                     <constraint firstItem="WHf-ZI-IKF" firstAttribute="leading" secondItem="XBg-ue-DZV" secondAttribute="leading" id="YjA-E3-WXw"/>
                                 </constraints>
                             </stackView>
+                            <navigationBar clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lho-ib-z98">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="h4d-lG-Nem"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Profile" id="0O3-iI-bDc"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1423,7 +1422,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LoL-Mm-Nal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-207" y="-409"/>
+            <point key="canvasLocation" x="-151" y="-404"/>
+        </scene>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="Cma-zf-jaD">
+            <objects>
+                <viewController id="BH9-Si-ebt" customClass="EditProfileViewController" customModule="WhosCookin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UVR-ou-5LV"/>
+                        <viewControllerLayoutGuide type="bottom" id="gSs-zC-X50"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gaC-X8-6uG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rW9-Nk-gxI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="V3c-S8-PMx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="ziF-II-5IH"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Edit Profile" id="Gq0-Gd-mMi"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NV7-Vy-v5R">
+                                <rect key="frame" x="0.0" y="90" width="600" height="510"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellProfileEdit" id="kkx-N6-bZ3">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kkx-N6-bZ3" id="szD-Ga-MMN">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BH9-Si-ebt" id="zBW-hr-s9p"/>
+                                    <outlet property="delegate" destination="BH9-Si-ebt" id="QYu-cn-V0v"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NV7-Vy-v5R" secondAttribute="trailing" id="0q6-ly-aUf"/>
+                            <constraint firstAttribute="trailing" secondItem="rW9-Nk-gxI" secondAttribute="trailing" id="5da-6J-BMv"/>
+                            <constraint firstItem="rW9-Nk-gxI" firstAttribute="top" secondItem="gaC-X8-6uG" secondAttribute="top" id="8HB-ZL-7yt"/>
+                            <constraint firstItem="NV7-Vy-v5R" firstAttribute="top" secondItem="rW9-Nk-gxI" secondAttribute="bottom" constant="20" id="MKL-KI-RaU"/>
+                            <constraint firstItem="NV7-Vy-v5R" firstAttribute="leading" secondItem="gaC-X8-6uG" secondAttribute="leading" id="Qsi-PI-qxk"/>
+                            <constraint firstItem="gSs-zC-X50" firstAttribute="top" secondItem="NV7-Vy-v5R" secondAttribute="bottom" id="e2R-AE-nVG"/>
+                            <constraint firstItem="rW9-Nk-gxI" firstAttribute="leading" secondItem="gaC-X8-6uG" secondAttribute="leading" id="w4m-th-7SY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profileTableView" destination="NV7-Vy-v5R" id="Mpm-ME-Ycr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxY-pI-vON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59" y="-324"/>
         </scene>
     </scenes>
     <resources>

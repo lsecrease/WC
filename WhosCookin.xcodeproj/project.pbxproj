@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		C03045AB1D46981B00E8BE12 /* MealInventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03045AA1D46981B00E8BE12 /* MealInventoryTableViewCell.swift */; };
 		C03045AD1D46986800E8BE12 /* MealInventoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C03045AC1D46986800E8BE12 /* MealInventoryTableViewCell.xib */; };
+		C03045FD1D4769BB00E8BE12 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C03045F91D4769BB00E8BE12 /* TextFieldTableViewCell.xib */; };
+		C03045FE1D4769BB00E8BE12 /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03045FA1D4769BB00E8BE12 /* EditProfileTableViewCell.swift */; };
+		C03045FF1D4769BB00E8BE12 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03045FB1D4769BB00E8BE12 /* EditProfileViewController.swift */; };
+		C03046001D4769BB00E8BE12 /* MultiInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C03045FC1D4769BB00E8BE12 /* MultiInputTableViewCell.xib */; };
 		C03291081D439D2B00798825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03291071D439D2B00798825 /* AppDelegate.swift */; };
 		C032910D1D439D2B00798825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C032910B1D439D2B00798825 /* Main.storyboard */; };
 		C03291101D439D2B00798825 /* WhosCookin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C032910E1D439D2B00798825 /* WhosCookin.xcdatamodeld */; };
@@ -60,6 +64,10 @@
 		A0758FA2479BA3420D98E114 /* Pods_WhosCookin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhosCookin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03045AA1D46981B00E8BE12 /* MealInventoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealInventoryTableViewCell.swift; sourceTree = "<group>"; };
 		C03045AC1D46986800E8BE12 /* MealInventoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealInventoryTableViewCell.xib; sourceTree = "<group>"; };
+		C03045F91D4769BB00E8BE12 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		C03045FA1D4769BB00E8BE12 /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
+		C03045FB1D4769BB00E8BE12 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		C03045FC1D4769BB00E8BE12 /* MultiInputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiInputTableViewCell.xib; sourceTree = "<group>"; };
 		C03291041D439D2B00798825 /* WhosCookin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhosCookin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03291071D439D2B00798825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C032910C1D439D2B00798825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -204,6 +212,8 @@
 		C0F784821D454B4800E982E7 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				C03045F91D4769BB00E8BE12 /* TextFieldTableViewCell.xib */,
+				C03045FC1D4769BB00E8BE12 /* MultiInputTableViewCell.xib */,
 				C0F784921D454FAE00E982E7 /* CancelledOrderTableViewCell.xib */,
 				C0F784931D454FAE00E982E7 /* FulfilledOrderTableViewCell.xib */,
 				C0F784A31D45550F00E982E7 /* OrderTableViewCell.xib */,
@@ -217,6 +227,8 @@
 		C0F784851D454BF100E982E7 /* Swift Files */ = {
 			isa = PBXGroup;
 			children = (
+				C03045FA1D4769BB00E8BE12 /* EditProfileTableViewCell.swift */,
+				C03045FB1D4769BB00E8BE12 /* EditProfileViewController.swift */,
 				C0F784861D454F7600E982E7 /* CancelledOrderTableViewCell.swift */,
 				C0F784871D454F7600E982E7 /* FoodCategoryCollectionViewCell.swift */,
 				C0F784881D454F7600E982E7 /* FulfilledOrderTableViewCell.swift */,
@@ -395,8 +407,10 @@
 				C0F7849B1D45500700E982E7 /* Info.plist in Resources */,
 				C03291151D439D2B00798825 /* LaunchScreen.storyboard in Resources */,
 				C0F784971D454FAE00E982E7 /* PendingOrderTableViewCell.xib in Resources */,
+				C03045FD1D4769BB00E8BE12 /* TextFieldTableViewCell.xib in Resources */,
 				C0F784A41D45550F00E982E7 /* OrderTableViewCell.xib in Resources */,
 				C03291121D439D2B00798825 /* Assets.xcassets in Resources */,
+				C03046001D4769BB00E8BE12 /* MultiInputTableViewCell.xib in Resources */,
 				C0F784961D454FAE00E982E7 /* FulfilledOrderTableViewCell.xib in Resources */,
 				C0F784841D454B6000E982E7 /* PendingOrderItemCell.xib in Resources */,
 				C03045AD1D46986800E8BE12 /* MealInventoryTableViewCell.xib in Resources */,
@@ -475,11 +489,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0F7848E1D454F7600E982E7 /* FulfilledOrderTableViewCell.swift in Sources */,
+				C03045FE1D4769BB00E8BE12 /* EditProfileTableViewCell.swift in Sources */,
 				C0F784801D454A4700E982E7 /* SignUpViewController.swift in Sources */,
 				C03291081D439D2B00798825 /* AppDelegate.swift in Sources */,
 				C0F7847C1D454A4700E982E7 /* LocationSearchViewController.swift in Sources */,
 				C03291101D439D2B00798825 /* WhosCookin.xcdatamodeld in Sources */,
 				C0F784901D454F7600E982E7 /* PendingOrderItemCell.swift in Sources */,
+				C03045FF1D4769BB00E8BE12 /* EditProfileViewController.swift in Sources */,
 				C0D175461D46247A002A2A93 /* ProfileViewController.swift in Sources */,
 				C0F784911D454F7600E982E7 /* PendingOrderTableViewCell.swift in Sources */,
 				C0F7847D1D454A4700E982E7 /* LoginViewController.swift in Sources */,
