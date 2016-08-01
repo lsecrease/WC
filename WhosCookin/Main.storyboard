@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Uf-b3-Deo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zuf-u4-5xz">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -773,34 +773,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xj3-xS-XoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1714" y="-1395"/>
-        </scene>
-        <!--Filter Layout Table View Controller-->
-        <scene sceneID="gBE-K0-awk">
-            <objects>
-                <tableViewController id="6Bc-P0-fki" customClass="FilterLayoutTableViewController" customModule="WhosCookin" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="172" sectionHeaderHeight="28" sectionFooterHeight="28" id="IEC-Ey-KAr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="172" id="x1I-JC-a5v">
-                                <rect key="frame" x="0.0" y="28" width="600" height="172"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x1I-JC-a5v" id="9ub-aR-XMW">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="172"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="6Bc-P0-fki" id="Wu4-VG-a3a"/>
-                            <outlet property="delegate" destination="6Bc-P0-fki" id="fEz-KR-3ha"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jwc-vz-x9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1714" y="372"/>
         </scene>
         <!--Order View Controller-->
         <scene sceneID="GFv-Q8-Ibu">
@@ -2477,6 +2449,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyE-Rr-Jf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044" y="547"/>
+        </scene>
+        <!--Filter Layout View Controller-->
+        <scene sceneID="w28-aq-JHF">
+            <objects>
+                <viewController id="Zuf-u4-5xz" customClass="FilterLayoutViewController" customModule="WhosCookin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HVH-qE-7Om"/>
+                        <viewControllerLayoutGuide type="bottom" id="bKT-p2-LKl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AWk-M9-hzC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Trx-hh-rjR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4OI-VD-Z1w"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="wDf-dm-HTe"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pJE-J8-K3x">
+                                <rect key="frame" x="0.0" y="99" width="600" height="501"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellFilterLayout" id="A7a-4y-bxK" customClass="FilterLayoutTableViewCell" customModule="WhosCookin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A7a-4y-bxK" id="gLe-GI-9b4">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zuf-u4-5xz" id="iBG-tN-GZg"/>
+                                    <outlet property="delegate" destination="Zuf-u4-5xz" id="kLg-hy-uqo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pJE-J8-K3x" firstAttribute="leading" secondItem="AWk-M9-hzC" secondAttribute="leading" id="Bir-Kv-tWQ"/>
+                            <constraint firstItem="pJE-J8-K3x" firstAttribute="top" secondItem="Trx-hh-rjR" secondAttribute="bottom" constant="35" id="Xdg-3H-j7t"/>
+                            <constraint firstItem="Trx-hh-rjR" firstAttribute="leading" secondItem="AWk-M9-hzC" secondAttribute="leading" id="a79-Zw-Hgb"/>
+                            <constraint firstItem="bKT-p2-LKl" firstAttribute="top" secondItem="pJE-J8-K3x" secondAttribute="bottom" id="dv8-13-PEl"/>
+                            <constraint firstAttribute="trailing" secondItem="pJE-J8-K3x" secondAttribute="trailing" id="h2x-Ol-rb1"/>
+                            <constraint firstItem="Trx-hh-rjR" firstAttribute="top" secondItem="AWk-M9-hzC" secondAttribute="top" constant="20" id="wTX-oK-hlr"/>
+                            <constraint firstAttribute="trailing" secondItem="Trx-hh-rjR" secondAttribute="trailing" id="yuP-Py-tmS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="filterlayoutTable" destination="pJE-J8-K3x" id="0fR-t3-Zvh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ff-iH-9sS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2395" y="116"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="o6q-dZ-Jy4">

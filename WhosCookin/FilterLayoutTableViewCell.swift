@@ -10,10 +10,20 @@ import UIKit
 
 class FilterLayoutTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var layoutImage: UIImageView!
+    @IBOutlet weak var filterImageView: UIImageView!
     @IBOutlet weak var filterLabel: UILabel!
     
+    var imageName: String? {
+        didSet {
+            filterImageView.image = UIImage(named: imageName!)
+        }
+    }
     
+    var filterType: String? {
+        didSet {
+            filterLabel.text = filterType!
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

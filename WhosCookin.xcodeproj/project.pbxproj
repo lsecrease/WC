@@ -34,7 +34,6 @@
 		C065A2321D4FF2F80064F7B9 /* PendingOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C065A2281D4FF2F80064F7B9 /* PendingOrderTableViewCell.xib */; };
 		C065A2331D4FF2F80064F7B9 /* PendingOrderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C065A2291D4FF2F80064F7B9 /* PendingOrderItemCell.xib */; };
 		C065A2341D4FF2F80064F7B9 /* MealInventoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C065A22A1D4FF2F80064F7B9 /* MealInventoryTableViewCell.xib */; };
-		C065A23A1D4FF3D60064F7B9 /* FilterLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2381D4FF3D60064F7B9 /* FilterLayoutTableViewController.swift */; };
 		C065A23B1D4FF3D60064F7B9 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2391D4FF3D60064F7B9 /* HomeTableViewController.swift */; };
 		C065A2471D4FF3E40064F7B9 /* FoodCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A23C1D4FF3E40064F7B9 /* FoodCategoryViewController.swift */; };
 		C065A2481D4FF3E40064F7B9 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A23D1D4FF3E40064F7B9 /* LocationSearchViewController.swift */; };
@@ -46,8 +45,8 @@
 		C065A24E1D4FF3E40064F7B9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2431D4FF3E40064F7B9 /* SignUpViewController.swift */; };
 		C065A24F1D4FF3E40064F7B9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2441D4FF3E40064F7B9 /* ProfileViewController.swift */; };
 		C065A2501D4FF3E40064F7B9 /* AddNewDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */; };
-		C065A2511D4FF3E40064F7B9 /* FilterLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2461D4FF3E40064F7B9 /* FilterLayoutViewController.swift */; };
 		C065A2541D4FF41E0064F7B9 /* KDCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */; };
+		C065A2561D500AB90064F7B9 /* FilterLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */; };
 		C0F7849B1D45500700E982E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0F7849A1D45500700E982E7 /* Info.plist */; };
 		C0F784A11D4550B900E982E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784A01D4550B900E982E7 /* Extensions.swift */; };
 		EA6BCB255132576F4590A20C /* Pods_WhosCookin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0758FA2479BA3420D98E114 /* Pods_WhosCookin.framework */; };
@@ -104,7 +103,6 @@
 		C065A2281D4FF2F80064F7B9 /* PendingOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingOrderTableViewCell.xib; sourceTree = "<group>"; };
 		C065A2291D4FF2F80064F7B9 /* PendingOrderItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingOrderItemCell.xib; sourceTree = "<group>"; };
 		C065A22A1D4FF2F80064F7B9 /* MealInventoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealInventoryTableViewCell.xib; sourceTree = "<group>"; };
-		C065A2381D4FF3D60064F7B9 /* FilterLayoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLayoutTableViewController.swift; sourceTree = "<group>"; };
 		C065A2391D4FF3D60064F7B9 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		C065A23C1D4FF3E40064F7B9 /* FoodCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewController.swift; sourceTree = "<group>"; };
 		C065A23D1D4FF3E40064F7B9 /* LocationSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
@@ -116,8 +114,8 @@
 		C065A2431D4FF3E40064F7B9 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C065A2441D4FF3E40064F7B9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewDishViewController.swift; sourceTree = "<group>"; };
-		C065A2461D4FF3E40064F7B9 /* FilterLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLayoutViewController.swift; sourceTree = "<group>"; };
 		C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgressView.swift; sourceTree = "<group>"; };
+		C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLayoutViewController.swift; sourceTree = "<group>"; };
 		C0F7849A1D45500700E982E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/plists/Info.plist; sourceTree = "<group>"; };
 		C0F784A01D4550B900E982E7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Utility/Extensions/Extensions.swift; sourceTree = "<group>"; };
 		E9452C253AFC91652F9BB101 /* Pods-WhosCookin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosCookin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhosCookin/Pods-WhosCookin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 		C065A2361D4FF3920064F7B9 /* Table View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C065A2381D4FF3D60064F7B9 /* FilterLayoutTableViewController.swift */,
 				C065A2391D4FF3D60064F7B9 /* HomeTableViewController.swift */,
 			);
 			name = "Table View Controllers";
@@ -236,7 +233,7 @@
 				C065A2431D4FF3E40064F7B9 /* SignUpViewController.swift */,
 				C065A2441D4FF3E40064F7B9 /* ProfileViewController.swift */,
 				C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */,
-				C065A2461D4FF3E40064F7B9 /* FilterLayoutViewController.swift */,
+				C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -544,9 +541,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C065A2511D4FF3E40064F7B9 /* FilterLayoutViewController.swift in Sources */,
 				C065A2471D4FF3E40064F7B9 /* FoodCategoryViewController.swift in Sources */,
 				C065A2171D4FF2E40064F7B9 /* EditProfileTableViewCell.swift in Sources */,
+				C065A2561D500AB90064F7B9 /* FilterLayoutViewController.swift in Sources */,
 				C065A24B1D4FF3E40064F7B9 /* FeedViewController.swift in Sources */,
 				C065A2181D4FF2E40064F7B9 /* CancelledOrderTableViewCell.swift in Sources */,
 				C03291081D439D2B00798825 /* AppDelegate.swift in Sources */,
@@ -559,7 +556,6 @@
 				C065A21E1D4FF2E40064F7B9 /* PendingOrderTableViewCell.swift in Sources */,
 				C065A21B1D4FF2E40064F7B9 /* OrderTableViewCell.swift in Sources */,
 				C065A2491D4FF3E40064F7B9 /* EditProfileViewController.swift in Sources */,
-				C065A23A1D4FF3D60064F7B9 /* FilterLayoutTableViewController.swift in Sources */,
 				C03291101D439D2B00798825 /* WhosCookin.xcdatamodeld in Sources */,
 				C065A2501D4FF3E40064F7B9 /* AddNewDishViewController.swift in Sources */,
 				C065A23B1D4FF3D60064F7B9 /* HomeTableViewController.swift in Sources */,
