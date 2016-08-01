@@ -30,6 +30,7 @@ enum Filters: Int {
 
 class FilterLayoutViewController: UIViewController {
     
+    @IBOutlet weak var navBar: UINavigationBar!
     let cellID = "idCellFilterLayout"
     let cellNibname = "FilterLayoutTableViewCell"
     
@@ -40,6 +41,21 @@ class FilterLayoutViewController: UIViewController {
         
         registerNibs()
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navBar.barTintColor = UIColor.orangeColor()
+        navBar.backgroundColor = UIColor.blackColor()
+        
+        let titleDict: NSDictionary = [
+            NSForegroundColorAttributeName: UIColor.orangeColor(),
+            NSFontAttributeName: UIFont(name: "Avenir-Book", size: 18)!
+        ]
+        
+        navBar.titleTextAttributes = (titleDict as! [String : AnyObject])
+
     }
     
     func registerNibs() {

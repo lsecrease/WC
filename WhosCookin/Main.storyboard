@@ -2462,18 +2462,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Trx-hh-rjR">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="4OI-VD-Z1w"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Title" id="wDf-dm-HTe"/>
-                                </items>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pJE-J8-K3x">
                                 <rect key="frame" x="0.0" y="99" width="600" height="501"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellFilterLayout" id="A7a-4y-bxK" customClass="FilterLayoutTableViewCell" customModule="WhosCookin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
@@ -2489,8 +2480,21 @@
                                     <outlet property="delegate" destination="Zuf-u4-5xz" id="kLg-hy-uqo"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Trx-hh-rjR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4OI-VD-Z1w"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="CHOOSE FILTER LAYOUT" id="wDf-dm-HTe">
+                                        <barButtonItem key="leftBarButtonItem" image="close" id="ZnW-xa-Fwt">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pJE-J8-K3x" firstAttribute="leading" secondItem="AWk-M9-hzC" secondAttribute="leading" id="Bir-Kv-tWQ"/>
                             <constraint firstItem="pJE-J8-K3x" firstAttribute="top" secondItem="Trx-hh-rjR" secondAttribute="bottom" constant="35" id="Xdg-3H-j7t"/>
@@ -2503,6 +2507,7 @@
                     </view>
                     <connections>
                         <outlet property="filterlayoutTable" destination="pJE-J8-K3x" id="0fR-t3-Zvh"/>
+                        <outlet property="navBar" destination="Trx-hh-rjR" id="tnG-Xg-iW4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ff-iH-9sS" userLabel="First Responder" sceneMemberID="firstResponder"/>
