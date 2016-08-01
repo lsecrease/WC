@@ -35,6 +35,7 @@ class FilterLayoutViewController: UIViewController {
     let cellNibname = "FilterLayoutTableViewCell"
     
     @IBOutlet weak var filterlayoutTable: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +47,10 @@ class FilterLayoutViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        navBar.barTintColor = UIColor.orangeColor()
         navBar.backgroundColor = UIColor.blackColor()
         
         let titleDict: NSDictionary = [
-            NSForegroundColorAttributeName: UIColor.orangeColor(),
+            NSForegroundColorAttributeName: UIColor(hexString: "F86F4E"),
             NSFontAttributeName: UIFont(name: "Avenir-Book", size: 18)!
         ]
         
