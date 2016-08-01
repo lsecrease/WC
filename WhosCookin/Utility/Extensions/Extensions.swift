@@ -27,3 +27,15 @@ extension UITextField {
     }
     
 }
+
+extension UIButton {
+    
+    func addBorderWithCornerRadius(borderWidth borderWidth: CGFloat, borderColor: CGColor, cornerRadius: CGFloat) {
+        self.layer.cornerRadius = cornerRadius
+        self.layer.borderWidth = borderWidth
+        self.layer.borderColor = borderColor
+        
+    }
+    
+    
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellFilterLayout" rowHeight="126" id="KGk-i7-Jjw" customClass="FilterLayoutTableViewCell" customModule="WhosCookin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qkm-7M-pEf">
+                        <rect key="frame" x="20" y="26" width="82" height="74"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A35-Tb-knR">
+                        <rect key="frame" x="128" y="39" width="184" height="48"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="31"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="qkm-7M-pEf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6Xm-rK-NFa"/>
+                    <constraint firstItem="A35-Tb-knR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ogz-Nh-blx"/>
+                    <constraint firstItem="A35-Tb-knR" firstAttribute="leading" secondItem="qkm-7M-pEf" secondAttribute="trailing" constant="26" id="P1E-WL-oEL"/>
+                    <constraint firstItem="qkm-7M-pEf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="scU-qQ-88A"/>
+                    <constraint firstAttribute="trailing" secondItem="A35-Tb-knR" secondAttribute="trailing" constant="8" id="tsm-cy-GAT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="filterLabel" destination="A35-Tb-knR" id="HeW-Iq-3Nb"/>
+                <outlet property="imageView" destination="qkm-7M-pEf" id="vYv-5H-Xxp"/>
+            </connections>
+            <point key="canvasLocation" x="1299" y="560"/>
+        </tableViewCell>
+    </objects>
+</document>
