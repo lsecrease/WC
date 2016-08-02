@@ -1447,14 +1447,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikW-q6-Ule" userLabel="Spacing">
-                                        <rect key="frame" x="0.0" y="242" width="600" height="20"/>
+                                        <rect key="frame" x="0.0" y="242" width="600" height="10"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="57a-Wk-g2Q"/>
+                                            <constraint firstAttribute="height" constant="10" id="57a-Wk-g2Q"/>
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="po7-sa-M1p">
-                                        <rect key="frame" x="0.0" y="262" width="600" height="224"/>
+                                        <rect key="frame" x="0.0" y="252" width="600" height="234"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="separatorInset" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
                                         <prototypes>
