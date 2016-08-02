@@ -14,17 +14,35 @@ class AddNewDishViewController: UIViewController {
     @IBOutlet weak var imageButton2: UIButton!
     @IBOutlet weak var imageButton3: UIButton!
     
+    var currentButton: UIButton?
+    
     @IBAction func addImage(sender: UIButton) {
         
+        currentButton = sender
         
+        if sender.currentImage == nil {
+//            if UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) {
+//                let imagePicker = UIImagePickerController()
+//                // imagePicker.delegate = self
+//                imagePicker.allowsEditing = false
+//                imagePicker.sourceType = .PhotoLibrary
+//                
+//                self.presentViewController(imagePicker, animated: true, completion: nil)
+//            }
+        }
     }
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         addButtonBorders()
         addObservers()
+        
+    }
+    
+    func configureImagePicker() {
         
     }
     
@@ -79,6 +97,17 @@ class AddNewDishViewController: UIViewController {
             }
         }
     }
- 
+    
+}
+
+extension AddNewDishViewController: UIImagePickerControllerDelegate {
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        currentButton?.setImage(image, forState: .Normal)
+        currentButton?.contentMode = .ScaleAspectFill
+        currentButton?.clipsToBounds = true
+        
+    }
     
 }
