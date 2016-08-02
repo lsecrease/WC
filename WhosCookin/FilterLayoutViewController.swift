@@ -35,11 +35,20 @@ class FilterLayoutViewController: UIViewController {
     let cellNibname = "FilterLayoutTableViewCell"
     
     @IBOutlet weak var filterlayoutTable: UITableView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    
 
+    @IBAction func closeButtonPressed(sender: UIBarButtonItem) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor.clearColor()
+        applyBlurToBackground()
         registerNibs()
         
     }
@@ -47,7 +56,7 @@ class FilterLayoutViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        navBar.backgroundColor = UIColor.blackColor()
+        navBar.backgroundColor = UIColor.clearColor()
         
         let titleDict: NSDictionary = [
             NSForegroundColorAttributeName: UIColor(hexString: "F86F4E"),
@@ -60,6 +69,17 @@ class FilterLayoutViewController: UIViewController {
     
     func registerNibs() {
         filterlayoutTable.registerNib(UINib(nibName: cellNibname, bundle: nil), forCellReuseIdentifier: cellID)
+    }
+    
+    func applyBlurToBackground() {
+        
+        self.view.backgroundColor = UIColor.clearColor()
+        filterlayoutTable.backgroundColor = UIColor.clearColor()
+        let blurEffect = UIBlurEffect(style: .Dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.view.frame
+        backgroundImageView.addSubview(blurEffectView)
+        
     }
     
     
@@ -84,6 +104,7 @@ extension FilterLayoutViewController: UITableViewDataSource, UITableViewDelegate
         if let filter = Filters(rawValue: indexPath.row) {
             cell.imageName = filter.imageName
             cell.filterType = filter.filterType
+            cell.backgroundColor = UIColor.clearColor()
         }
         
         return cell

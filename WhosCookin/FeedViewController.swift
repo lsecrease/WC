@@ -10,7 +10,6 @@ import UIKit
 
 class FeedViewController: UIViewController {
     
-    // var tabBarHeight = CGFloat()
     let feedCellID = "idCellFeed"
     let feedTableNibName = "FeedTableViewCell"
     
@@ -25,12 +24,16 @@ class FeedViewController: UIViewController {
     
     let distances = [5, 79, 879, 3]
     let ratings = [8.4, 7.0, 5.3, 9.9]
+    
+    @IBAction func viewButtonPressed(sender: UIBarButtonItem) {
+        
+        
+    }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         self.tabBarController?.navigationItem.hidesBackButton = true
-        
         
     }
     
