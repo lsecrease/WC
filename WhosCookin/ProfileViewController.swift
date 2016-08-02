@@ -30,7 +30,7 @@ class ProfileViewController: UIViewController {
     
     func configureSegmentedControl() {
         
-        let frame = CGRect(x: 0, y: 242, width: self.view.frame.width, height: 60)
+        let frame = CGRect(x: 0, y: 247, width: self.view.frame.width, height: 60)
         
         let segmentTitles = ["Meal Inventory", "Meals Ordered", "Meal Ratings"]
         var attributedTitles = [NSMutableAttributedString]()

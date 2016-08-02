@@ -27,6 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navBarAppearance.shadowImage = UIImage()
         
     }
+    
+    func configureTabBarAppearance() {
+        
+        let tabBarAppearance = UITabBar.appearance()
+        tabBarAppearance.tintColor = UIColor.whiteColor()
+        
+        
+    }
 
     // MARK: - Application life-cycle
     
