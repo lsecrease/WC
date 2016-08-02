@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zmG-37-x99">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ojL-ye-EYN">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -579,7 +579,8 @@
                             <constraint firstAttribute="trailing" secondItem="nKa-xA-CdB" secondAttribute="trailing" id="Sh0-f9-igG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="6Oh-bf-Xtn"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="7eP-SW-Zpb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="locationSearchButton" destination="yqd-bv-xDu" id="kQV-b4-ndS"/>
                         <outlet property="locationTextField" destination="BPf-Ma-PMh" id="O5k-IG-uQ2"/>
@@ -1262,7 +1263,7 @@
                                 </items>
                             </navigationBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qDD-d7-QpC">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NlB-l6-zQ1">
                                     <size key="itemSize" width="150" height="210"/>
@@ -1327,16 +1328,17 @@
                             <constraint firstItem="ep1-65-DFB" firstAttribute="leading" secondItem="32r-Md-baz" secondAttribute="leading" id="yMs-qU-taj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="egc-GY-Mb3"/>
+                    <tabBarItem key="tabBarItem" title="Categories" image="lists" id="jNo-W1-oue"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="categoryCollectionView" destination="qDD-d7-QpC" id="qLJ-jZ-hnK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9p-kJ-StM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368" y="-733"/>
+            <point key="canvasLocation" x="482" y="-733"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="cm6-YI-Jq2">
             <objects>
                 <viewController id="YzW-eT-o4f" customClass="ProfileViewController" customModule="WhosCookin" customModuleProvider="target" sceneMemberID="viewController">
@@ -1349,7 +1351,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XBg-ue-DZV">
-                                <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                                <rect key="frame" x="0.0" y="60" width="600" height="491"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="260" verticalCompressionResistancePriority="745" translatesAutoresizingMaskIntoConstraints="NO" id="1xN-hu-mxo" userLabel="Image Area">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="117"/>
@@ -1452,7 +1454,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="po7-sa-M1p">
-                                        <rect key="frame" x="0.0" y="292" width="600" height="248"/>
+                                        <rect key="frame" x="0.0" y="292" width="600" height="199"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="separatorInset" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
                                         <prototypes>
@@ -1500,7 +1502,8 @@
                             <constraint firstAttribute="trailing" secondItem="XBg-ue-DZV" secondAttribute="trailing" id="ssC-ZR-dyC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="5Br-x7-9HZ"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile_small" id="bay-99-eHi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mealInventoryTable" destination="po7-sa-M1p" id="Mqe-CS-xCa"/>
                         <outlet property="segmentedControl" destination="WHf-ZI-IKF" id="Udu-uS-QCa"/>
@@ -1508,7 +1511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4iv-wW-PoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="379" y="1389"/>
+            <point key="canvasLocation" x="373" y="1351"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="Cma-zf-jaD">
@@ -2103,7 +2106,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-oD-U6S">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-oD-U6S">
                                 <rect key="frame" x="0.0" y="60" width="600" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -2133,14 +2136,15 @@
                             <constraint firstItem="hAg-oD-U6S" firstAttribute="leading" secondItem="qsJ-cx-DqO" secondAttribute="leading" id="vQX-tH-Dqj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="pGH-Eb-q27"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="menu" id="2iv-gD-qim"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="feedTable" destination="hAg-oD-U6S" id="sh2-pd-X56"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQv-2z-Enm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="379" y="692"/>
+            <point key="canvasLocation" x="379" y="636"/>
         </scene>
         <!--Home Table View Controller-->
         <scene sceneID="LQn-R3-4gT">
@@ -2536,20 +2540,20 @@
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="ohH-GY-Vs6">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.35137432813644409" green="0.82300287485122681" blue="0.75891906023025513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.35137432813644409" green="0.82300287485122681" blue="0.75891906023025513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.35137432813644409" green="0.82300287485122681" blue="0.75891906023025513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zmG-37-x99" kind="relationship" relationship="viewControllers" id="snn-1j-ugA"/>
-                        <segue destination="doc-YZ-Kwb" kind="relationship" relationship="viewControllers" id="34C-hH-Z28"/>
-                        <segue destination="z3m-wP-IDJ" kind="relationship" relationship="viewControllers" id="poc-Q7-4tC"/>
-                        <segue destination="YzW-eT-o4f" kind="relationship" relationship="viewControllers" id="ROl-QM-19C"/>
+                        <segue destination="zmG-37-x99" kind="relationship" relationship="viewControllers" id="AO4-QJ-ezU"/>
+                        <segue destination="doc-YZ-Kwb" kind="relationship" relationship="viewControllers" id="LXl-me-0S2"/>
+                        <segue destination="z3m-wP-IDJ" kind="relationship" relationship="viewControllers" id="4P8-sD-RDh"/>
+                        <segue destination="YzW-eT-o4f" kind="relationship" relationship="viewControllers" id="my9-5y-Yxz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Zv-3N-sjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-264" y="-733"/>
+            <point key="canvasLocation" x="-185" y="-853"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rEu-vL-btI">
@@ -2581,8 +2585,12 @@
         <image name="dine" width="80" height="80"/>
         <image name="food3" width="750" height="700"/>
         <image name="ic_place" width="88" height="126"/>
+        <image name="lists" width="41" height="37"/>
+        <image name="menu" width="42" height="34"/>
         <image name="order" width="30" height="35"/>
+        <image name="profile_small" width="44" height="44"/>
         <image name="salad" width="141" height="135"/>
+        <image name="search" width="45" height="44"/>
         <image name="shape1" width="144" height="143"/>
         <image name="shape2" width="236" height="234"/>
     </resources>
