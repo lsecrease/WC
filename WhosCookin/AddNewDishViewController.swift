@@ -10,6 +10,7 @@ import UIKit
 
 class AddNewDishViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageButton1: UIButton!
     @IBOutlet weak var imageButton2: UIButton!
     @IBOutlet weak var imageButton3: UIButton!
@@ -22,6 +23,8 @@ class AddNewDishViewController: UIViewController {
     var currentTextField: UITextField?
     
     var picker = UIPickerView()
+    let pickerHeight:CGFloat = 200.0
+
     let pickerData = ["A", "B", "C", "D", "E", "F", "G", "H"]
     
     @IBAction func addImage(sender: UIButton) {
@@ -40,6 +43,29 @@ class AddNewDishViewController: UIViewController {
         }
     }
     
+    @IBAction func categoryButtonClicked(sender: UIButton) {
+        
+        if !picker.hidden {
+            
+            scrollView.setContentOffset(CGPoint(x: 0, y: 0) , animated: true)
+            self.picker.hidden = true
+
+        } else {
+            scrollView.setContentOffset(CGPoint(x: 0, y: 190) , animated: true)
+            self.picker.hidden = false
+
+        }
+        
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        picker.hidden = false
+        if currentTextField != nil {
+            currentTextField?.resignFirstResponder()
+        }
+        // scrollView.setContentOffset(CGPoint(x: 0, y: 0) , animated: true)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,22 +75,21 @@ class AddNewDishViewController: UIViewController {
         addButtonBorders()
         addObservers()
         addPicker()
+        
+
     }
     
     func addPicker() {
-        let width = view.bounds.width
         let height = view.bounds.height
+        let width = view.bounds.width
         
-        // let pickerWidth = width
-        let pickerheight = height * 0.25
-        picker = UIPickerView(frame: CGRect(x: 0, y: height - pickerheight, width: width, height: pickerheight))
+        picker = UIPickerView(frame: CGRect(x: 0, y: height - pickerHeight, width: width, height: pickerHeight))
         picker.delegate = self
         picker.dataSource = self
-        //quantityTextField.inputView = picker
-        
         view.addSubview(picker)
         picker.hidden = true
     }
+    
     
     func configureImagePicker() {
         
@@ -129,8 +154,16 @@ class AddNewDishViewController: UIViewController {
 extension AddNewDishViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        
+        currentTextField = textField
+        if !picker.hidden {
+            picker.hidden = true
+            scrollView.setContentOffset(CGPoint(x: 0, y: 0) , animated: true)
+        } else {
+            picker.hidden = false
+            scrollView.setContentOffset(CGPoint(x: 0, y: pickerHeight ) , animated: true)
+        }
     }
+    
 }
 
 extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate {

@@ -1970,6 +1970,9 @@
                                                                 <state key="normal" title="Category">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="categoryButtonClicked:" destination="NlN-0q-Ec6" eventType="touchUpInside" id="GvW-bA-pYI"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2072,9 +2075,15 @@
                         <outlet property="imageButton3" destination="RoK-3i-5vs" id="B5G-tf-aln"/>
                         <outlet property="priceTextField" destination="1yM-z6-dPQ" id="q4z-aG-Vjf"/>
                         <outlet property="quantityTextField" destination="4iY-kh-TyD" id="Q3w-pr-hdt"/>
+                        <outlet property="scrollView" destination="FMr-vI-7bU" id="SMl-FS-UKC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLg-6V-6q6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8LL-Z1-5kr">
+                    <connections>
+                        <outlet property="delegate" destination="QLF-Pk-CCV" id="fJ9-v2-pa2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="176" y="-1566"/>
         </scene>
