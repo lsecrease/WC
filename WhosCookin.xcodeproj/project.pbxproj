@@ -47,6 +47,7 @@
 		C065A2501D4FF3E40064F7B9 /* AddNewDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */; };
 		C065A2541D4FF41E0064F7B9 /* KDCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */; };
 		C065A2561D500AB90064F7B9 /* FilterLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */; };
+		C0E5988C1D51DF1400504856 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5988B1D51DF1400504856 /* CurrencyTextField.swift */; };
 		C0F7849B1D45500700E982E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0F7849A1D45500700E982E7 /* Info.plist */; };
 		C0F784A11D4550B900E982E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784A01D4550B900E982E7 /* Extensions.swift */; };
 		EA6BCB255132576F4590A20C /* Pods_WhosCookin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0758FA2479BA3420D98E114 /* Pods_WhosCookin.framework */; };
@@ -116,6 +117,7 @@
 		C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewDishViewController.swift; sourceTree = "<group>"; };
 		C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgressView.swift; sourceTree = "<group>"; };
 		C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLayoutViewController.swift; sourceTree = "<group>"; };
+		C0E5988B1D51DF1400504856 /* CurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		C0F7849A1D45500700E982E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/plists/Info.plist; sourceTree = "<group>"; };
 		C0F784A01D4550B900E982E7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Utility/Extensions/Extensions.swift; sourceTree = "<group>"; };
 		E9452C253AFC91652F9BB101 /* Pods-WhosCookin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosCookin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhosCookin/Pods-WhosCookin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +248,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C0E5988A1D51DE9700504856 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5988B1D51DF1400504856 /* CurrencyTextField.swift */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
 		C0F784811D454B3000E982E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +318,7 @@
 		C0F7849C1D45503F00E982E7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				C0E5988A1D51DE9700504856 /* Custom Classes */,
 				C065A2521D4FF40D0064F7B9 /* Frameworks */,
 				C0F7849D1D45504B00E982E7 /* Extensions */,
 			);
@@ -556,6 +567,7 @@
 				C065A21E1D4FF2E40064F7B9 /* PendingOrderTableViewCell.swift in Sources */,
 				C065A21B1D4FF2E40064F7B9 /* OrderTableViewCell.swift in Sources */,
 				C065A2491D4FF3E40064F7B9 /* EditProfileViewController.swift in Sources */,
+				C0E5988C1D51DF1400504856 /* CurrencyTextField.swift in Sources */,
 				C03291101D439D2B00798825 /* WhosCookin.xcdatamodeld in Sources */,
 				C065A2501D4FF3E40064F7B9 /* AddNewDishViewController.swift in Sources */,
 				C065A23B1D4FF3D60064F7B9 /* HomeTableViewController.swift in Sources */,

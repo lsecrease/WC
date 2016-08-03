@@ -14,7 +14,12 @@ class AddNewDishViewController: UIViewController {
     @IBOutlet weak var imageButton2: UIButton!
     @IBOutlet weak var imageButton3: UIButton!
     
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var quantityTextField: UITextField!
+    
+    
     var currentButton: UIButton?
+    var currentTextField: UITextField?
     
     @IBAction func addImage(sender: UIButton) {
         
@@ -37,9 +42,9 @@ class AddNewDishViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
         addButtonBorders()
         addObservers()
-        
     }
     
     func configureImagePicker() {
@@ -58,7 +63,9 @@ class AddNewDishViewController: UIViewController {
         imageButton3.addBorderWithCornerRadius(borderWidth: borderWidth, borderColor: borderColor, cornerRadius: cornerRadius)
 
     }
+    
 
+    
     // MARK: - Custom functions
     
     func addObservers() {
@@ -97,6 +104,11 @@ class AddNewDishViewController: UIViewController {
             }
         }
     }
+    
+}
+
+extension AddNewDishViewController: UITextFieldDelegate {
+    
     
 }
 
