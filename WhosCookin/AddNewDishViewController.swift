@@ -15,10 +15,12 @@ class AddNewDishViewController: UIViewController {
     @IBOutlet weak var imageButton2: UIButton!
     @IBOutlet weak var imageButton3: UIButton!
     
-    
+    @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var quantityTextField: UITextField!
-    
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var prepTimeTextField: UITextField!
+
     
     var currentButton: UIButton?
     var currentTextField: UITextField?
@@ -45,9 +47,11 @@ class AddNewDishViewController: UIViewController {
     }
     
     @IBAction func dismissKeyboard() {
+        dateTextField.resignFirstResponder()
         priceTextField.resignFirstResponder()
         quantityTextField.resignFirstResponder()
-        
+        locationTextField.resignFirstResponder()
+        prepTimeTextField.resignFirstResponder()
     }
     
     @IBAction func categoryButtonClicked(sender: UIButton) {
@@ -144,7 +148,7 @@ class AddNewDishViewController: UIViewController {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
             if view.frame.origin.y == 0 {
                 UIView.animateWithDuration(0.3, animations: {
-                    self.view.frame.origin.y -= keyboardSize.height
+                    self.view.frame.origin.y -= (keyboardSize.height - 100)
                 })
             }
         }
@@ -155,13 +159,15 @@ class AddNewDishViewController: UIViewController {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
             if view.frame.origin.y != 0 {
                 UIView.animateWithDuration(0.3, animations: {
-                    self.view.frame.origin.y += keyboardSize.height
+                    self.view.frame.origin.y += (keyboardSize.height - 100)
                 })
             }
         }
     }
     
 }
+
+// MARK: - UITextField Delegate methods
 
 extension AddNewDishViewController: UITextFieldDelegate {
     
@@ -177,6 +183,8 @@ extension AddNewDishViewController: UITextFieldDelegate {
     }
     
 }
+
+// MARK: - UIPickerView Delegate methods
 
 extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
@@ -194,6 +202,8 @@ extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate
     }
     
 }
+
+// MARK: - UIImagePickerController delegate methods
 
 extension AddNewDishViewController: UIImagePickerControllerDelegate {
     

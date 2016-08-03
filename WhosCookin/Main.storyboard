@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1yG-hU-wRA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NlN-0q-Ec6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -1926,7 +1926,7 @@
                                                                     <constraint firstAttribute="height" constant="30" id="nXJ-mi-BEt"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="namePhonePad"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2053,6 +2053,9 @@
                                             <constraint firstItem="dzP-jz-zOn" firstAttribute="height" secondItem="7Vl-en-kxz" secondAttribute="height" id="dTb-i4-YM0"/>
                                             <constraint firstItem="Zc4-Bw-b2A" firstAttribute="height" secondItem="QLF-Pk-CCV" secondAttribute="height" multiplier="0.27" id="lCs-aa-3Rg"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="8LL-Z1-5kr" appends="YES" id="4ai-yL-MdX"/>
+                                        </connections>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -2093,9 +2096,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateTextField" destination="5EQ-0O-zrm" id="X1k-YG-Ddy"/>
                         <outlet property="imageButton1" destination="pct-va-ZuS" id="uDy-Hn-X0P"/>
                         <outlet property="imageButton2" destination="xfM-Fq-l0b" id="95Z-y3-vxX"/>
                         <outlet property="imageButton3" destination="RoK-3i-5vs" id="B5G-tf-aln"/>
+                        <outlet property="locationTextField" destination="gUs-g1-77i" id="iby-Ir-c9f"/>
+                        <outlet property="prepTimeTextField" destination="HTd-k5-sLN" id="3Wd-kQ-n1t"/>
                         <outlet property="priceTextField" destination="1yM-z6-dPQ" id="q4z-aG-Vjf"/>
                         <outlet property="quantityTextField" destination="4iY-kh-TyD" id="Q3w-pr-hdt"/>
                         <outlet property="scrollView" destination="FMr-vI-7bU" id="SMl-FS-UKC"/>
