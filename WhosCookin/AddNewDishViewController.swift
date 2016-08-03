@@ -21,6 +21,9 @@ class AddNewDishViewController: UIViewController {
     var currentButton: UIButton?
     var currentTextField: UITextField?
     
+    var picker = UIPickerView()
+    let pickerData = ["A", "B", "C", "D", "E", "F", "G", "H"]
+    
     @IBAction func addImage(sender: UIButton) {
         
         currentButton = sender
@@ -45,6 +48,22 @@ class AddNewDishViewController: UIViewController {
     
         addButtonBorders()
         addObservers()
+        addPicker()
+    }
+    
+    func addPicker() {
+        let width = view.bounds.width
+        let height = view.bounds.height
+        
+        // let pickerWidth = width
+        let pickerheight = height * 0.25
+        picker = UIPickerView(frame: CGRect(x: 0, y: height - pickerheight, width: width, height: pickerheight))
+        picker.delegate = self
+        picker.dataSource = self
+        //quantityTextField.inputView = picker
+        
+        view.addSubview(picker)
+        picker.hidden = true
     }
     
     func configureImagePicker() {
@@ -109,6 +128,25 @@ class AddNewDishViewController: UIViewController {
 
 extension AddNewDishViewController: UITextFieldDelegate {
     
+    func textFieldDidBeginEditing(textField: UITextField) {
+        
+    }
+}
+
+extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+        
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
     
 }
 

@@ -1790,13 +1790,13 @@
                                                                     <constraint firstAttribute="height" constant="1" id="YjF-2A-xsZ"/>
                                                                 </constraints>
                                                             </view>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4iY-kh-TyD">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4iY-kh-TyD" customClass="IntegerTextField" customModule="WhosCookin" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="19" width="262" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="6KW-Ap-1yf"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2071,11 +2071,12 @@
                         <outlet property="imageButton2" destination="xfM-Fq-l0b" id="95Z-y3-vxX"/>
                         <outlet property="imageButton3" destination="RoK-3i-5vs" id="B5G-tf-aln"/>
                         <outlet property="priceTextField" destination="1yM-z6-dPQ" id="q4z-aG-Vjf"/>
+                        <outlet property="quantityTextField" destination="4iY-kh-TyD" id="Q3w-pr-hdt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLg-6V-6q6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="384" y="-1395"/>
+            <point key="canvasLocation" x="176" y="-1566"/>
         </scene>
         <!--Feed-->
         <scene sceneID="uUy-kd-PJL">
