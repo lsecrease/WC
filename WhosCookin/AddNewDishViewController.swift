@@ -15,6 +15,7 @@ class AddNewDishViewController: UIViewController {
     @IBOutlet weak var imageButton2: UIButton!
     @IBOutlet weak var imageButton3: UIButton!
     
+    
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var quantityTextField: UITextField!
     
@@ -41,6 +42,12 @@ class AddNewDishViewController: UIViewController {
 //                self.presentViewController(imagePicker, animated: true, completion: nil)
 //            }
         }
+    }
+    
+    @IBAction func dismissKeyboard() {
+        priceTextField.resignFirstResponder()
+        quantityTextField.resignFirstResponder()
+        
     }
     
     @IBAction func categoryButtonClicked(sender: UIButton) {
@@ -75,8 +82,13 @@ class AddNewDishViewController: UIViewController {
         addButtonBorders()
         addObservers()
         addPicker()
-        
 
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        removeObservers()
     }
     
     func addPicker() {
