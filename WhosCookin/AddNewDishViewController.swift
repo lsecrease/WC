@@ -20,10 +20,13 @@ class AddNewDishViewController: UIViewController {
     @IBOutlet weak var quantityTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var prepTimeTextField: UITextField!
+    @IBOutlet weak var categoryTextField: UITextField!
 
+    @IBOutlet weak var arrowImageView: UIImageView!
     
     var currentButton: UIButton?
     var currentTextField: UITextField?
+    var isPointingDown = false
     
     var picker = UIPickerView()
     let pickerHeight:CGFloat = 200.0
@@ -46,53 +49,29 @@ class AddNewDishViewController: UIViewController {
         }
     }
     
-    @IBAction func dismissKeyboard() {
-        dateTextField.resignFirstResponder()
-        priceTextField.resignFirstResponder()
-        quantityTextField.resignFirstResponder()
-        locationTextField.resignFirstResponder()
-        prepTimeTextField.resignFirstResponder()
-    }
-    
-    @IBAction func categoryButtonClicked(sender: UIButton) {
-        
-        if !picker.hidden {
-            
-            scrollView.setContentOffset(CGPoint(x: 0, y: 0) , animated: true)
-            self.picker.hidden = true
-
-        } else {
-            scrollView.setContentOffset(CGPoint(x: 0, y: 190) , animated: true)
-            self.picker.hidden = false
-
-        }
-        
-    }
-    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        picker.hidden = false
-        if currentTextField != nil {
-            currentTextField?.resignFirstResponder()
-        }
-        // scrollView.setContentOffset(CGPoint(x: 0, y: 0) , animated: true)
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     
         addButtonBorders()
-        addObservers()
-        addPicker()
+        // addObservers()
+        //addPicker()
+//        let height = view.bounds.height
+//        let width = view.bounds.width
+//        
+//        picker = UIPickerView(frame: CGRect(x: 0, y: height - pickerHeight, width: width, height: pickerHeight))
+//        picker.delegate = self
+//        picker.dataSource = self
+//        view.addSubview(picker)
+//        quantityTextField.inputView = picker
 
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
-        removeObservers()
+        // removeObservers()
     }
     
     func addPicker() {
@@ -103,7 +82,7 @@ class AddNewDishViewController: UIViewController {
         picker.delegate = self
         picker.dataSource = self
         view.addSubview(picker)
-        picker.hidden = true
+        //picker.hidden = true
     }
     
     
@@ -123,47 +102,7 @@ class AddNewDishViewController: UIViewController {
         imageButton3.addBorderWithCornerRadius(borderWidth: borderWidth, borderColor: borderColor, cornerRadius: cornerRadius)
 
     }
-    
 
-    
-    // MARK: - Custom functions
-    
-    func addObservers() {
-        let notifCenter = NSNotificationCenter.defaultCenter()
-        notifCenter.addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        notifCenter.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
-    }
-    
-    func removeObservers() {
-        let notifCenter = NSNotificationCenter.defaultCenter()
-        notifCenter.removeObserver(self, name: UIKeyboardWillShowNotification, object: self.view.window)
-        notifCenter.removeObserver(self, name: UIKeyboardWillHideNotification, object: self.view.window)
-        
-    }
-    
-    // Handle textField and keyboard visibility
-    
-    func keyboardWillShow(notification: NSNotification) {
-        
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
-            if view.frame.origin.y == 0 {
-                UIView.animateWithDuration(0.3, animations: {
-                    self.view.frame.origin.y -= (keyboardSize.height - 100)
-                })
-            }
-        }
-    }
-    
-    func keyboardWillHide(notification: NSNotification) {
-        
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
-            if view.frame.origin.y != 0 {
-                UIView.animateWithDuration(0.3, animations: {
-                    self.view.frame.origin.y += (keyboardSize.height - 100)
-                })
-            }
-        }
-    }
     
 }
 
@@ -171,15 +110,24 @@ class AddNewDishViewController: UIViewController {
 
 extension AddNewDishViewController: UITextFieldDelegate {
     
+//    func textFieldDidBeginEditing(textField: UITextField) {
+//        currentTextField = textField
+//        if !picker.hidden {
+//            picker.hidden = true
+//            scrollView.setContentOffset(CGPoint(x: 0, y: 0) , animated: true)
+//        } else {
+//            picker.hidden = false
+//            scrollView.setContentOffset(CGPoint(x: 0, y: pickerHeight ) , animated: true)
+//        }
+//    }
+    
     func textFieldDidBeginEditing(textField: UITextField) {
-        currentTextField = textField
-        if !picker.hidden {
-            picker.hidden = true
-            scrollView.setContentOffset(CGPoint(x: 0, y: 0) , animated: true)
-        } else {
-            picker.hidden = false
-            scrollView.setContentOffset(CGPoint(x: 0, y: pickerHeight ) , animated: true)
+        if textField == categoryTextField {
+            UIView.animateWithDuration(0.3, animations: {
+                self.arrowImageView.transform = CGAffineTransformRotate(self.arrowImageView.transform, 180 * CGFloat(M_PI/180))
+            })
         }
+        
     }
     
 }
@@ -190,7 +138,6 @@ extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
-        
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
