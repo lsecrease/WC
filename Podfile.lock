@@ -1,15 +1,12 @@
 PODS:
-  - IQKeyboardManagerSwift (4.0.4)
   - XMSegmentedControl (0.1.4)
 
 DEPENDENCIES:
-  - IQKeyboardManagerSwift
   - XMSegmentedControl
 
 SPEC CHECKSUMS:
-  IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
   XMSegmentedControl: 51cf4f3daf14920692a064d9252aa7b29622dda6
 
-PODFILE CHECKSUM: 9aff23904aa5969545d4b59484bd765f896540fc
+PODFILE CHECKSUM: b8ca09a43e158a0c8bbcd924bb5e01a2a342a6f0
 
 COCOAPODS: 1.0.1

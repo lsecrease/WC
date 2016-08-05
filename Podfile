@@ -8,6 +8,5 @@ target 'WhosCookin' do
   # Pods for WhosCookin
 
 pod "XMSegmentedControl"
-pod 'IQKeyboardManagerSwift'
 
 end
