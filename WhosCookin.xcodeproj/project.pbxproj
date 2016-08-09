@@ -47,6 +47,7 @@
 		C065A2501D4FF3E40064F7B9 /* AddNewDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */; };
 		C065A2541D4FF41E0064F7B9 /* KDCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */; };
 		C065A2561D500AB90064F7B9 /* FilterLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */; };
+		C0DC24641D5A98B20034C169 /* UserScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DC24631D5A98B20034C169 /* UserScreens.storyboard */; };
 		C0E5988C1D51DF1400504856 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5988B1D51DF1400504856 /* CurrencyTextField.swift */; };
 		C0E5988E1D51F02B00504856 /* IntegerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5988D1D51F02B00504856 /* IntegerTextField.swift */; };
 		C0F7849B1D45500700E982E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0F7849A1D45500700E982E7 /* Info.plist */; };
@@ -120,6 +121,7 @@
 		C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewDishViewController.swift; sourceTree = "<group>"; };
 		C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgressView.swift; sourceTree = "<group>"; };
 		C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLayoutViewController.swift; sourceTree = "<group>"; };
+		C0DC24631D5A98B20034C169 /* UserScreens.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserScreens.storyboard; sourceTree = "<group>"; };
 		C0E5988B1D51DF1400504856 /* CurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		C0E5988D1D51F02B00504856 /* IntegerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerTextField.swift; sourceTree = "<group>"; };
 		C0F7849A1D45500700E982E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/plists/Info.plist; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				C065A20B1D4FF2C40064F7B9 /* Main.storyboard */,
+				C0DC24631D5A98B20034C169 /* UserScreens.storyboard */,
 				C03291131D439D2B00798825 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
@@ -522,6 +525,7 @@
 				C03291121D439D2B00798825 /* Assets.xcassets in Resources */,
 				C065A2331D4FF2F80064F7B9 /* PendingOrderItemCell.xib in Resources */,
 				C065A22D1D4FF2F80064F7B9 /* MultiInputTableViewCell.xib in Resources */,
+				C0DC24641D5A98B20034C169 /* UserScreens.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

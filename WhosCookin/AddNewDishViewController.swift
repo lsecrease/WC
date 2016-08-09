@@ -26,13 +26,20 @@ class AddNewDishViewController: UIViewController {
     
     let actionToolbar = ActionToolbar()
     
+    // Picker Views
     var currentButton: UIButton?
     var currentTextField: UITextField?
     var isPointingDown = false
     
     var datePicker = UIDatePicker()
-    var picker1 = UIPickerView()
-    var picker2 = UIPickerView()
+    
+    var categoryPicker = UIPickerView()
+    let categories = ["A", "B", "C", "D", "E", "F", "G"]
+    
+    var prepTimePicker = UIPickerView()
+    var times = [String]()
+    let timeMeasures = ["Minutes", "Hours"]
+    let maxTime = 60
     
     
     @IBAction func addImage(sender: UIButton) {
@@ -48,7 +55,7 @@ class AddNewDishViewController: UIViewController {
         addButtonBorders()
         configurePickerViews()
         
-        dateTextField.inputView = datePicker
+        
         
         dateTextField.addActionToolbar()
         priceTextField.addActionToolbar()
@@ -58,6 +65,12 @@ class AddNewDishViewController: UIViewController {
         categoryTextField.addActionToolbar()
         
     }
+    
+    func addTimes() {
+        for t in 1...maxTime {
+            self.times += ["\(t)"]
+        }
+    }
         
     func configurePickerViews() {
         
@@ -66,14 +79,18 @@ class AddNewDishViewController: UIViewController {
         datePicker.locale = NSLocale.currentLocale()
         datePicker.minuteInterval = 15
         datePicker.minimumDate = NSDate()
+        dateTextField.inputView = datePicker
         
-        picker1 = UIPickerView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
-        picker1.delegate = self
-        picker1.dataSource = self
+        addTimes()
+        prepTimePicker = UIPickerView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
+        prepTimePicker.delegate = self
+        prepTimePicker.dataSource = self
+        prepTimeTextField.inputView = prepTimePicker
         
-        picker2 = UIPickerView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
-        picker1.delegate = self
-        picker1.dataSource = self
+        categoryPicker = UIPickerView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
+        categoryPicker.delegate = self
+        categoryPicker.dataSource = self
+        categoryTextField.inputView = categoryPicker
         
     }
     
@@ -145,14 +162,71 @@ extension AddNewDishViewController: UITextFieldDelegate {
 extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
+        
+        var components = Int()
+        
+        switch pickerView {
+            
+        case prepTimePicker:
+            components = 2
+            
+        case categoryPicker:
+            components = 1
+            
+        default:
+            break
+        }
+        
+        return components
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        
+        switch pickerView {
+            
+        case prepTimePicker:
+            switch component {
+            case 0:
+                return times.count
+            case 1:
+                return timeMeasures.count
+            default:
+                break
+            }
+            
+        case categoryPicker:
+            return categories.count
+            
+        default:
+            break
+        }
+        
         return 1
+
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        switch pickerView {
+            
+        case prepTimePicker:
+            switch component {
+            case 0:
+                return times[row]
+            case 1:
+                return timeMeasures[row]
+            default:
+                break
+            }
+            
+        case categoryPicker:
+            return categories[row]
+            
+        default:
+            break
+        }
+        
         return ""
     }
     
