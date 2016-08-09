@@ -51,6 +51,8 @@
 		C0E5988E1D51F02B00504856 /* IntegerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5988D1D51F02B00504856 /* IntegerTextField.swift */; };
 		C0F7849B1D45500700E982E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0F7849A1D45500700E982E7 /* Info.plist */; };
 		C0F784A11D4550B900E982E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F784A01D4550B900E982E7 /* Extensions.swift */; };
+		C0F7F2581D56786C007BB36E /* ActionToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F7F2571D56786C007BB36E /* ActionToolBar.xib */; };
+		C0F7F25C1D5687B5007BB36E /* ActionToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F7F25B1D5687B5007BB36E /* ActionToolbar.swift */; };
 		EA6BCB255132576F4590A20C /* Pods_WhosCookin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0758FA2479BA3420D98E114 /* Pods_WhosCookin.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +124,8 @@
 		C0E5988D1D51F02B00504856 /* IntegerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerTextField.swift; sourceTree = "<group>"; };
 		C0F7849A1D45500700E982E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/plists/Info.plist; sourceTree = "<group>"; };
 		C0F784A01D4550B900E982E7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Utility/Extensions/Extensions.swift; sourceTree = "<group>"; };
+		C0F7F2571D56786C007BB36E /* ActionToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionToolBar.xib; sourceTree = "<group>"; };
+		C0F7F25B1D5687B5007BB36E /* ActionToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionToolbar.swift; sourceTree = "<group>"; };
 		E9452C253AFC91652F9BB101 /* Pods-WhosCookin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosCookin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhosCookin/Pods-WhosCookin.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3489D845F401BB66EA9BEE /* Pods-WhosCookin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosCookin.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhosCookin/Pods-WhosCookin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +156,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C007F4591D551E7100541349 /* Cell Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				C065A2211D4FF2F80064F7B9 /* TextFieldTableViewCell.xib */,
+				C065A2221D4FF2F80064F7B9 /* FilterLayoutTableViewCell.xib */,
+				C065A2231D4FF2F80064F7B9 /* MultiInputTableViewCell.xib */,
+				C065A2241D4FF2F80064F7B9 /* CancelledOrderTableViewCell.xib */,
+				C065A2251D4FF2F80064F7B9 /* FulfilledOrderTableViewCell.xib */,
+				C065A2261D4FF2F80064F7B9 /* FeedTableViewCell.xib */,
+				C065A2271D4FF2F80064F7B9 /* OrderTableViewCell.xib */,
+				C065A2281D4FF2F80064F7B9 /* PendingOrderTableViewCell.xib */,
+				C065A2291D4FF2F80064F7B9 /* PendingOrderItemCell.xib */,
+				C065A22A1D4FF2F80064F7B9 /* MealInventoryTableViewCell.xib */,
+			);
+			name = "Cell Xibs";
+			sourceTree = "<group>";
+		};
 		C03290FB1D439D2B00798825 = {
 			isa = PBXGroup;
 			children = (
@@ -272,16 +293,8 @@
 		C0F784821D454B4800E982E7 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				C065A2211D4FF2F80064F7B9 /* TextFieldTableViewCell.xib */,
-				C065A2221D4FF2F80064F7B9 /* FilterLayoutTableViewCell.xib */,
-				C065A2231D4FF2F80064F7B9 /* MultiInputTableViewCell.xib */,
-				C065A2241D4FF2F80064F7B9 /* CancelledOrderTableViewCell.xib */,
-				C065A2251D4FF2F80064F7B9 /* FulfilledOrderTableViewCell.xib */,
-				C065A2261D4FF2F80064F7B9 /* FeedTableViewCell.xib */,
-				C065A2271D4FF2F80064F7B9 /* OrderTableViewCell.xib */,
-				C065A2281D4FF2F80064F7B9 /* PendingOrderTableViewCell.xib */,
-				C065A2291D4FF2F80064F7B9 /* PendingOrderItemCell.xib */,
-				C065A22A1D4FF2F80064F7B9 /* MealInventoryTableViewCell.xib */,
+				C0F7F24E1D566D24007BB36E /* Bars */,
+				C007F4591D551E7100541349 /* Cell Xibs */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -289,16 +302,8 @@
 		C0F784851D454BF100E982E7 /* Swift Files */ = {
 			isa = PBXGroup;
 			children = (
-				C065A20D1D4FF2E40064F7B9 /* EditProfileTableViewCell.swift */,
-				C065A20E1D4FF2E40064F7B9 /* CancelledOrderTableViewCell.swift */,
-				C065A20F1D4FF2E40064F7B9 /* FoodCategoryCollectionViewCell.swift */,
-				C065A2101D4FF2E40064F7B9 /* FulfilledOrderTableViewCell.swift */,
-				C065A2111D4FF2E40064F7B9 /* OrderTableViewCell.swift */,
-				C065A2121D4FF2E40064F7B9 /* FeedTableViewCell.swift */,
-				C065A2131D4FF2E40064F7B9 /* PendingOrderItemCell.swift */,
-				C065A2141D4FF2E40064F7B9 /* PendingOrderTableViewCell.swift */,
-				C065A2151D4FF2E40064F7B9 /* MealInventoryTableViewCell.swift */,
-				C065A2161D4FF2E40064F7B9 /* FilterLayoutTableViewCell.swift */,
+				C0F7F2521D566DAC007BB36E /* Bars */,
+				C0F7F2511D566D96007BB36E /* Cells */,
 			);
 			name = "Swift Files";
 			sourceTree = "<group>";
@@ -343,6 +348,39 @@
 				C03291131D439D2B00798825 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		C0F7F24E1D566D24007BB36E /* Bars */ = {
+			isa = PBXGroup;
+			children = (
+				C0F7F2571D56786C007BB36E /* ActionToolBar.xib */,
+			);
+			name = Bars;
+			sourceTree = "<group>";
+		};
+		C0F7F2511D566D96007BB36E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C065A20D1D4FF2E40064F7B9 /* EditProfileTableViewCell.swift */,
+				C065A20E1D4FF2E40064F7B9 /* CancelledOrderTableViewCell.swift */,
+				C065A20F1D4FF2E40064F7B9 /* FoodCategoryCollectionViewCell.swift */,
+				C065A2101D4FF2E40064F7B9 /* FulfilledOrderTableViewCell.swift */,
+				C065A2111D4FF2E40064F7B9 /* OrderTableViewCell.swift */,
+				C065A2121D4FF2E40064F7B9 /* FeedTableViewCell.swift */,
+				C065A2131D4FF2E40064F7B9 /* PendingOrderItemCell.swift */,
+				C065A2141D4FF2E40064F7B9 /* PendingOrderTableViewCell.swift */,
+				C065A2151D4FF2E40064F7B9 /* MealInventoryTableViewCell.swift */,
+				C065A2161D4FF2E40064F7B9 /* FilterLayoutTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		C0F7F2521D566DAC007BB36E /* Bars */ = {
+			isa = PBXGroup;
+			children = (
+				C0F7F25B1D5687B5007BB36E /* ActionToolbar.swift */,
+			);
+			name = Bars;
 			sourceTree = "<group>";
 		};
 		E2011178AE1613F738A110A8 /* Frameworks */ = {
@@ -472,6 +510,7 @@
 				C0F7849B1D45500700E982E7 /* Info.plist in Resources */,
 				C065A2341D4FF2F80064F7B9 /* MealInventoryTableViewCell.xib in Resources */,
 				C065A2301D4FF2F80064F7B9 /* FeedTableViewCell.xib in Resources */,
+				C0F7F2581D56786C007BB36E /* ActionToolBar.xib in Resources */,
 				C03291151D439D2B00798825 /* LaunchScreen.storyboard in Resources */,
 				C065A22F1D4FF2F80064F7B9 /* FulfilledOrderTableViewCell.xib in Resources */,
 				C065A2311D4FF2F80064F7B9 /* OrderTableViewCell.xib in Resources */,
@@ -575,6 +614,7 @@
 				C03291101D439D2B00798825 /* WhosCookin.xcdatamodeld in Sources */,
 				C065A2501D4FF3E40064F7B9 /* AddNewDishViewController.swift in Sources */,
 				C065A23B1D4FF3D60064F7B9 /* HomeTableViewController.swift in Sources */,
+				C0F7F25C1D5687B5007BB36E /* ActionToolbar.swift in Sources */,
 				C065A21C1D4FF2E40064F7B9 /* FeedTableViewCell.swift in Sources */,
 				C065A21F1D4FF2E40064F7B9 /* MealInventoryTableViewCell.swift in Sources */,
 				C065A24D1D4FF3E40064F7B9 /* PendingOrderDetailViewController.swift in Sources */,

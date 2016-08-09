@@ -24,73 +24,61 @@ class AddNewDishViewController: UIViewController {
 
     @IBOutlet weak var arrowImageView: UIImageView!
     
+    let actionToolbar = ActionToolbar()
+    
     var currentButton: UIButton?
     var currentTextField: UITextField?
     var isPointingDown = false
     
-    var picker = UIPickerView()
-    let pickerHeight:CGFloat = 200.0
-
-    let pickerData = ["A", "B", "C", "D", "E", "F", "G", "H"]
+    var datePicker = UIDatePicker()
+    var picker1 = UIPickerView()
+    var picker2 = UIPickerView()
+    
     
     @IBAction func addImage(sender: UIButton) {
-        
         currentButton = sender
-        
         if sender.currentImage == nil {
-//            if UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) {
-//                let imagePicker = UIImagePickerController()
-//                // imagePicker.delegate = self
-//                imagePicker.allowsEditing = false
-//                imagePicker.sourceType = .PhotoLibrary
-//                
-//                self.presentViewController(imagePicker, animated: true, completion: nil)
-//            }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     
+        addObservers()
         addButtonBorders()
-        // addObservers()
-        //addPicker()
-//        let height = view.bounds.height
-//        let width = view.bounds.width
-//        
-//        picker = UIPickerView(frame: CGRect(x: 0, y: height - pickerHeight, width: width, height: pickerHeight))
-//        picker.delegate = self
-//        picker.dataSource = self
-//        view.addSubview(picker)
-//        quantityTextField.inputView = picker
-
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
+        configurePickerViews()
         
-        // removeObservers()
-    }
-    
-    func addPicker() {
-        let height = view.bounds.height
-        let width = view.bounds.width
+        dateTextField.inputView = datePicker
         
-        picker = UIPickerView(frame: CGRect(x: 0, y: height - pickerHeight, width: width, height: pickerHeight))
-        picker.delegate = self
-        picker.dataSource = self
-        view.addSubview(picker)
-        //picker.hidden = true
+        dateTextField.addActionToolbar()
+        priceTextField.addActionToolbar()
+        quantityTextField.addActionToolbar()
+        locationTextField.addActionToolbar()
+        prepTimeTextField.addActionToolbar()
+        categoryTextField.addActionToolbar()
+        
     }
-    
-    
-    func configureImagePicker() {
+        
+    func configurePickerViews() {
+        
+        datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
+        datePicker.datePickerMode = .Date
+        datePicker.locale = NSLocale.currentLocale()
+        datePicker.minuteInterval = 15
+        datePicker.minimumDate = NSDate()
+        
+        picker1 = UIPickerView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
+        picker1.delegate = self
+        picker1.dataSource = self
+        
+        picker2 = UIPickerView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
+        picker1.delegate = self
+        picker1.dataSource = self
         
     }
     
     func addButtonBorders() {
+        
         let borderWidth: CGFloat = 0.8
         let borderColor = UIColor.darkGrayColor().CGColor
         let cornerRadius: CGFloat = 5.0
@@ -102,6 +90,27 @@ class AddNewDishViewController: UIViewController {
         imageButton3.addBorderWithCornerRadius(borderWidth: borderWidth, borderColor: borderColor, cornerRadius: cornerRadius)
 
     }
+    
+    func addObservers() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AddNewDishViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AddNewDishViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    func removeObservers() {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+            self.view.frame.origin.y -= keyboardSize.height - 60.0
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+            self.view.frame.origin.y += keyboardSize.height - 60.0
+        }
+    }
 
     
 }
@@ -110,26 +119,25 @@ class AddNewDishViewController: UIViewController {
 
 extension AddNewDishViewController: UITextFieldDelegate {
     
-//    func textFieldDidBeginEditing(textField: UITextField) {
-//        currentTextField = textField
-//        if !picker.hidden {
-//            picker.hidden = true
-//            scrollView.setContentOffset(CGPoint(x: 0, y: 0) , animated: true)
-//        } else {
-//            picker.hidden = false
-//            scrollView.setContentOffset(CGPoint(x: 0, y: pickerHeight ) , animated: true)
-//        }
-//    }
-    
-    func textFieldDidBeginEditing(textField: UITextField) {
-        if textField == categoryTextField {
-            UIView.animateWithDuration(0.3, animations: {
-                self.arrowImageView.transform = CGAffineTransformRotate(self.arrowImageView.transform, 180 * CGFloat(M_PI/180))
-            })
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        var offsetY: CGFloat!
+        
+        switch textField {
+        case dateTextField:
+            offsetY = 100
+        case priceTextField, quantityTextField:
+            offsetY = 150
+            
+        default:
+            break
         }
         
+        scrollView.setContentOffset(CGPoint(x: 0, y: offsetY), animated: true)
+
+        
+        return true
     }
-    
+        
 }
 
 // MARK: - UIPickerView Delegate methods
@@ -141,11 +149,11 @@ extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+        return 1
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
+        return ""
     }
     
 }

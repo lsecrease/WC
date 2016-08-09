@@ -26,6 +26,32 @@ extension UITextField {
         self.attributedText = attributedString
     }
     
+    func addActionToolbar() {
+        
+        let actionToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: super.bounds.width, height: 45))
+        actionToolbar.barStyle = .BlackTranslucent
+        actionToolbar.setBackgroundImage(UIImage(), forToolbarPosition: .Any, barMetrics: .Default)
+        actionToolbar.setShadowImage(UIImage(), forToolbarPosition: .Any)
+        actionToolbar.tintColor = UIColor.whiteColor()
+        actionToolbar.backgroundColor = UIColor.darkGrayColor()
+        
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+        let donebutton = UIBarButtonItem(title: "Done", style: .Done, target: self, action: #selector(self.resignFirstResponder))
+        // let cancelButton = UIBarButtonItem(title: "Cancel", style: .Done, target: self, action: #selector(self.clearAndHideKeyboard))
+        
+        actionToolbar.setItems([flexibleSpace, donebutton], animated: true)
+        actionToolbar.sizeToFit()
+        actionToolbar.userInteractionEnabled = true
+        
+        self.inputAccessoryView = actionToolbar
+    }
+    
+    func clearAndHideKeyboard() {
+        self.text = ""
+        self.resignFirstResponder()
+    }
+
+    
 }
 
 extension UIButton {
