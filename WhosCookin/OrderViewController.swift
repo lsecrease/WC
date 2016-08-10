@@ -43,7 +43,6 @@ class OrderViewController: UIViewController {
         pendingOrdersTableView.hidden = false
         fulfilledOrdersTableView.hidden = true
         cancelledOrdersTableView.hidden = true
-
         
     }
     

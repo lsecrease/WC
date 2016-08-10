@@ -126,7 +126,7 @@
                 <outlet property="valueLabel1" destination="IoE-mT-WXj" id="dOm-ie-Iyg"/>
                 <outlet property="valueLabel2" destination="tJ5-Ir-vkw" id="eEh-22-rex"/>
             </connections>
-            <point key="canvasLocation" x="535.5" y="330"/>
+            <point key="canvasLocation" x="287.5" y="304"/>
         </tableViewCell>
     </objects>
 </document>

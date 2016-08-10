@@ -59,11 +59,11 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="avatar" destination="iBI-pC-w2B" id="Ju7-cv-mGX"/>
-                <outlet property="textField" destination="FAQ-mB-ear" id="s9h-FL-9zY"/>
-                <outlet property="titleLabel" destination="FLA-Nl-FdF" id="Bf7-DX-1Bv"/>
+                <outlet property="avatar" destination="iBI-pC-w2B" id="uYl-T3-bzB"/>
+                <outlet property="textField" destination="FAQ-mB-ear" id="hAJ-Qr-jbM"/>
+                <outlet property="titleLabel" destination="FLA-Nl-FdF" id="d0W-Ws-dDF"/>
             </connections>
-            <point key="canvasLocation" x="559.5" y="390"/>
+            <point key="canvasLocation" x="698.5" y="344"/>
         </tableViewCell>
     </objects>
 </document>

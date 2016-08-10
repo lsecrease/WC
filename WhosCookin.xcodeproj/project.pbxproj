@@ -47,6 +47,8 @@
 		C065A2501D4FF3E40064F7B9 /* AddNewDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */; };
 		C065A2541D4FF41E0064F7B9 /* KDCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */; };
 		C065A2561D500AB90064F7B9 /* FilterLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */; };
+		C0D0F4E01D5B4C3100643B8E /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D0F4DF1D5B4C3100643B8E /* TextFieldTableViewCell.swift */; };
+		C0D0F4E21D5B5BE000643B8E /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D0F4E11D5B5BE000643B8E /* LocationTableViewCell.xib */; };
 		C0DC24641D5A98B20034C169 /* UserScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DC24631D5A98B20034C169 /* UserScreens.storyboard */; };
 		C0E5988C1D51DF1400504856 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5988B1D51DF1400504856 /* CurrencyTextField.swift */; };
 		C0E5988E1D51F02B00504856 /* IntegerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5988D1D51F02B00504856 /* IntegerTextField.swift */; };
@@ -121,6 +123,8 @@
 		C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewDishViewController.swift; sourceTree = "<group>"; };
 		C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgressView.swift; sourceTree = "<group>"; };
 		C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLayoutViewController.swift; sourceTree = "<group>"; };
+		C0D0F4DF1D5B4C3100643B8E /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		C0D0F4E11D5B5BE000643B8E /* LocationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
 		C0DC24631D5A98B20034C169 /* UserScreens.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserScreens.storyboard; sourceTree = "<group>"; };
 		C0E5988B1D51DF1400504856 /* CurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		C0E5988D1D51F02B00504856 /* IntegerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerTextField.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				C065A2281D4FF2F80064F7B9 /* PendingOrderTableViewCell.xib */,
 				C065A2291D4FF2F80064F7B9 /* PendingOrderItemCell.xib */,
 				C065A22A1D4FF2F80064F7B9 /* MealInventoryTableViewCell.xib */,
+				C0D0F4E11D5B5BE000643B8E /* LocationTableViewCell.xib */,
 			);
 			name = "Cell Xibs";
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 				C065A2141D4FF2E40064F7B9 /* PendingOrderTableViewCell.swift */,
 				C065A2151D4FF2E40064F7B9 /* MealInventoryTableViewCell.swift */,
 				C065A2161D4FF2E40064F7B9 /* FilterLayoutTableViewCell.swift */,
+				C0D0F4DF1D5B4C3100643B8E /* TextFieldTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -511,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0F7849B1D45500700E982E7 /* Info.plist in Resources */,
+				C0D0F4E21D5B5BE000643B8E /* LocationTableViewCell.xib in Resources */,
 				C065A2341D4FF2F80064F7B9 /* MealInventoryTableViewCell.xib in Resources */,
 				C065A2301D4FF2F80064F7B9 /* FeedTableViewCell.xib in Resources */,
 				C0F7F2581D56786C007BB36E /* ActionToolBar.xib in Resources */,
@@ -607,6 +614,7 @@
 				C03291081D439D2B00798825 /* AppDelegate.swift in Sources */,
 				C065A24A1D4FF3E40064F7B9 /* LoginViewController.swift in Sources */,
 				C065A24F1D4FF3E40064F7B9 /* ProfileViewController.swift in Sources */,
+				C0D0F4E01D5B4C3100643B8E /* TextFieldTableViewCell.swift in Sources */,
 				C065A24E1D4FF3E40064F7B9 /* SignUpViewController.swift in Sources */,
 				C065A2541D4FF41E0064F7B9 /* KDCircularProgressView.swift in Sources */,
 				C065A21A1D4FF2E40064F7B9 /* FulfilledOrderTableViewCell.swift in Sources */,

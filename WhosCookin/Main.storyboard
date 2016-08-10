@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NlN-0q-Ec6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -408,7 +408,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1953" y="-1330"/>
+            <point key="canvasLocation" x="-1978" y="-1564"/>
         </scene>
         <!--Pending Order Detail View Controller-->
         <scene sceneID="DHE-Zk-58e">
@@ -1080,73 +1080,6 @@
             </objects>
             <point key="canvasLocation" x="-2258" y="-384"/>
         </scene>
-        <!--Edit Profile View Controller-->
-        <scene sceneID="Cma-zf-jaD">
-            <objects>
-                <viewController id="BH9-Si-ebt" customClass="EditProfileViewController" customModule="WhosCookin" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UVR-ou-5LV"/>
-                        <viewControllerLayoutGuide type="bottom" id="gSs-zC-X50"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gaC-X8-6uG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rW9-Nk-gxI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="V3c-S8-PMx"/>
-                                </constraints>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="Edit Profile" id="Gq0-Gd-mMi">
-                                        <barButtonItem key="leftBarButtonItem" image="close" id="fmM-CD-d6X">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" image="confirm" id="TXE-In-SBP">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NV7-Vy-v5R">
-                                <rect key="frame" x="0.0" y="80" width="600" height="520"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellProfileEdit" id="kkx-N6-bZ3">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kkx-N6-bZ3" id="szD-Ga-MMN">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BH9-Si-ebt" id="zBW-hr-s9p"/>
-                                    <outlet property="delegate" destination="BH9-Si-ebt" id="QYu-cn-V0v"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="NV7-Vy-v5R" secondAttribute="trailing" id="0q6-ly-aUf"/>
-                            <constraint firstAttribute="trailing" secondItem="rW9-Nk-gxI" secondAttribute="trailing" id="5da-6J-BMv"/>
-                            <constraint firstItem="rW9-Nk-gxI" firstAttribute="top" secondItem="gaC-X8-6uG" secondAttribute="top" id="8HB-ZL-7yt"/>
-                            <constraint firstItem="NV7-Vy-v5R" firstAttribute="top" secondItem="rW9-Nk-gxI" secondAttribute="bottom" constant="20" id="MKL-KI-RaU"/>
-                            <constraint firstItem="NV7-Vy-v5R" firstAttribute="leading" secondItem="gaC-X8-6uG" secondAttribute="leading" id="Qsi-PI-qxk"/>
-                            <constraint firstItem="gSs-zC-X50" firstAttribute="top" secondItem="NV7-Vy-v5R" secondAttribute="bottom" id="e2R-AE-nVG"/>
-                            <constraint firstItem="rW9-Nk-gxI" firstAttribute="leading" secondItem="gaC-X8-6uG" secondAttribute="leading" id="w4m-th-7SY"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="profileTableView" destination="NV7-Vy-v5R" id="Mpm-ME-Ycr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cxY-pI-vON" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1081" y="1389"/>
-        </scene>
         <!--Add New Dish-->
         <scene sceneID="PFS-3k-7rZ">
             <objects>
@@ -1672,7 +1605,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLg-6V-6q6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125" y="-1606"/>
+            <point key="canvasLocation" x="-272" y="-1611"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rEu-vL-btI">
@@ -1690,7 +1623,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xRi-uq-s7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1257" y="-1330"/>
+            <point key="canvasLocation" x="-1178" y="-1572"/>
         </scene>
         <!--UserScreens-->
         <scene sceneID="11L-Ef-tzB">
