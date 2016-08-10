@@ -34,6 +34,32 @@ class SignUpViewController: UIViewController {
         hideKeyboard()
     }
     
+    @IBAction func createAccountButtonPressed(sender: UIButton) {
+        
+        let email = emailTextField.text
+        let password = passwordTextField.text
+        
+        // Temporary validation samples
+        
+        if email?.characters.count < 5 {
+            
+            let alert = UIAlertController(title: "Error", message: "Please enter a valid email", preferredStyle: .Alert)
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        } else if password?.characters.count < 8 {
+            
+            let alert = UIAlertController(title: "Error", message: "Please enter a valid password", preferredStyle: .Alert)
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        } else {
+            
+            let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 150, height: 150))
+            spinner.startAnimating()
+            
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -413,7 +413,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d8R-Ul-DoT" id="U3m-uH-lF7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -506,7 +506,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EIq-ll-HYL" id="c8V-H0-qCC">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -975,17 +975,17 @@
                                     <navigationItem title="Edit Profile" id="ILn-tb-Tlb"/>
                                 </items>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wjY-pm-te9">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjY-pm-te9">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-WX-dw6">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="604"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-WX-dw6">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GBs-8i-bLu" userLabel="Input Area 1">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="101"/>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="GBs-8i-bLu" userLabel="Input Area 1">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ndS-6H-x62" userLabel="Username Area">
-                                                        <rect key="frame" x="28" y="18" width="545" height="53"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndS-6H-x62" userLabel="Username Area">
+                                                        <rect key="frame" x="28" y="12" width="545" height="53"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqQ-H5-4QF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="67" height="14"/>
@@ -1042,15 +1042,15 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="ndS-6H-x62" firstAttribute="leading" secondItem="GBs-8i-bLu" secondAttribute="leading" constant="28" id="1oT-cz-7Df"/>
-                                                    <constraint firstItem="ndS-6H-x62" firstAttribute="centerY" secondItem="GBs-8i-bLu" secondAttribute="centerY" id="3ON-cb-Z9C"/>
+                                                    <constraint firstItem="ndS-6H-x62" firstAttribute="centerY" secondItem="GBs-8i-bLu" secondAttribute="centerY" constant="-6" id="3ON-cb-Z9C"/>
                                                     <constraint firstAttribute="trailing" secondItem="ndS-6H-x62" secondAttribute="trailing" constant="27" id="Wkz-8G-Omz"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsO-1f-Kjg" userLabel="Input Area 2">
-                                                <rect key="frame" x="0.0" y="101" width="600" height="101"/>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="nsO-1f-Kjg" userLabel="Input Area 2">
+                                                <rect key="frame" x="0.0" y="90" width="600" height="89"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9OB-Eo-0f9" userLabel="Username Area">
-                                                        <rect key="frame" x="27" y="18" width="545" height="53"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OB-Eo-0f9" userLabel="Username Area">
+                                                        <rect key="frame" x="27" y="12" width="545" height="53"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kb1-9P-XMu" userLabel="Line">
                                                                 <rect key="frame" x="0.0" y="53" width="545" height="1"/>
@@ -1108,14 +1108,14 @@
                                                 <constraints>
                                                     <constraint firstItem="9OB-Eo-0f9" firstAttribute="leading" secondItem="nsO-1f-Kjg" secondAttribute="leading" constant="27" id="CNV-gb-OV2"/>
                                                     <constraint firstAttribute="trailing" secondItem="9OB-Eo-0f9" secondAttribute="trailing" constant="28" id="dR5-zN-gcE"/>
-                                                    <constraint firstItem="9OB-Eo-0f9" firstAttribute="centerY" secondItem="nsO-1f-Kjg" secondAttribute="centerY" id="oy8-T9-jAz"/>
+                                                    <constraint firstItem="9OB-Eo-0f9" firstAttribute="centerY" secondItem="nsO-1f-Kjg" secondAttribute="centerY" constant="-6" id="oy8-T9-jAz"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRo-Qk-jHF" userLabel="Input Area 3">
-                                                <rect key="frame" x="0.0" y="202" width="600" height="101"/>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="RRo-Qk-jHF" userLabel="Input Area 3">
+                                                <rect key="frame" x="0.0" y="179" width="600" height="90"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hA-L0j" userLabel="Username Area">
-                                                        <rect key="frame" x="27" y="18.5" width="545" height="53"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-hA-L0j" userLabel="Username Area">
+                                                        <rect key="frame" x="27" y="14" width="545" height="53"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzi-U2-daw">
                                                                 <rect key="frame" x="0.0" y="0.0" width="67" height="14"/>
@@ -1171,16 +1171,16 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="hhL-hA-L0j" firstAttribute="centerY" secondItem="RRo-Qk-jHF" secondAttribute="centerY" id="56d-cT-ksf"/>
+                                                    <constraint firstItem="hhL-hA-L0j" firstAttribute="centerY" secondItem="RRo-Qk-jHF" secondAttribute="centerY" constant="-5" id="56d-cT-ksf"/>
                                                     <constraint firstAttribute="trailing" secondItem="hhL-hA-L0j" secondAttribute="trailing" constant="28" id="N7q-P6-sWT"/>
                                                     <constraint firstItem="hhL-hA-L0j" firstAttribute="leading" secondItem="RRo-Qk-jHF" secondAttribute="leading" constant="27" id="uAm-Qo-GbN"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-CM-IbA" userLabel="Input Area 4">
-                                                <rect key="frame" x="0.0" y="302" width="600" height="101"/>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-CM-IbA" userLabel="Input Area 4">
+                                                <rect key="frame" x="0.0" y="268" width="600" height="90"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BkX-bs-s83" userLabel="Username Area">
-                                                        <rect key="frame" x="310" y="17.5" width="262" height="53"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkX-bs-s83" userLabel="Username Area">
+                                                        <rect key="frame" x="310" y="12" width="262" height="53"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i1-s4-emd" customClass="TextFieldHeaderLabel" customModule="WhosCookin" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="67" height="14"/>
@@ -1225,8 +1225,8 @@
                                                             <constraint firstItem="YAT-X4-myb" firstAttribute="leading" secondItem="BkX-bs-s83" secondAttribute="leading" id="xBJ-sY-VM0"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ev-Nf-NrC" userLabel="Username Area">
-                                                        <rect key="frame" x="28" y="17.5" width="262" height="53"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ev-Nf-NrC" userLabel="Username Area">
+                                                        <rect key="frame" x="28" y="12" width="262" height="53"/>
                                                         <subviews>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTX-18-SuG" customClass="CurrencyTextField" customModule="WhosCookin" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="19" width="262" height="30"/>
@@ -1277,16 +1277,16 @@
                                                     <constraint firstAttribute="trailing" secondItem="BkX-bs-s83" secondAttribute="trailing" constant="28" id="Xwp-hK-kOL"/>
                                                     <constraint firstItem="BkX-bs-s83" firstAttribute="width" secondItem="tf4-CM-IbA" secondAttribute="width" multiplier="0.5" constant="-38" id="ejV-uR-2kV"/>
                                                     <constraint firstItem="9Ev-Nf-NrC" firstAttribute="leading" secondItem="tf4-CM-IbA" secondAttribute="leading" constant="28" id="iou-cl-nu8"/>
-                                                    <constraint firstItem="BkX-bs-s83" firstAttribute="centerY" secondItem="tf4-CM-IbA" secondAttribute="centerY" id="nKe-oG-Hed"/>
-                                                    <constraint firstItem="9Ev-Nf-NrC" firstAttribute="centerY" secondItem="tf4-CM-IbA" secondAttribute="centerY" id="naa-FS-MFO"/>
+                                                    <constraint firstItem="BkX-bs-s83" firstAttribute="centerY" secondItem="tf4-CM-IbA" secondAttribute="centerY" constant="-6" id="nKe-oG-Hed"/>
+                                                    <constraint firstItem="9Ev-Nf-NrC" firstAttribute="centerY" secondItem="tf4-CM-IbA" secondAttribute="centerY" constant="-6" id="naa-FS-MFO"/>
                                                     <constraint firstItem="9Ev-Nf-NrC" firstAttribute="width" secondItem="tf4-CM-IbA" secondAttribute="width" multiplier="0.5" constant="-38" id="soE-lh-uGD"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7t-Pf-9rj" userLabel="Input Area 5">
-                                                <rect key="frame" x="0.0" y="403" width="600" height="101"/>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="a7t-Pf-9rj" userLabel="Input Area 5">
+                                                <rect key="frame" x="0.0" y="358" width="600" height="89"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9p-4j-fxb" userLabel="Username Area">
-                                                        <rect key="frame" x="27" y="18" width="545" height="53"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9p-4j-fxb" userLabel="Username Area">
+                                                        <rect key="frame" x="27" y="12" width="545" height="53"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb6-ho-9AB">
                                                                 <rect key="frame" x="0.0" y="0.0" width="67" height="14"/>
@@ -1344,15 +1344,15 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="t9p-4j-fxb" secondAttribute="trailing" constant="28" id="QTo-Co-Rru"/>
-                                                    <constraint firstItem="t9p-4j-fxb" firstAttribute="centerY" secondItem="a7t-Pf-9rj" secondAttribute="centerY" id="jEa-Ri-BiA"/>
+                                                    <constraint firstItem="t9p-4j-fxb" firstAttribute="centerY" secondItem="a7t-Pf-9rj" secondAttribute="centerY" constant="-6" id="jEa-Ri-BiA"/>
                                                     <constraint firstItem="t9p-4j-fxb" firstAttribute="leading" secondItem="a7t-Pf-9rj" secondAttribute="leading" constant="27" id="zoZ-rm-MdE"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-WG-6fa" userLabel="Input Area 6">
-                                                <rect key="frame" x="0.0" y="504" width="600" height="101"/>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-WG-6fa" userLabel="Input Area 6">
+                                                <rect key="frame" x="0.0" y="447" width="600" height="90"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Xh-VK-QGq" userLabel="Username Area">
-                                                        <rect key="frame" x="27" y="21" width="545" height="53"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Xh-VK-QGq" userLabel="Username Area">
+                                                        <rect key="frame" x="27" y="16" width="545" height="53"/>
                                                         <subviews>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="20 minutes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCa-eu-eIV">
                                                                 <rect key="frame" x="0.0" y="16" width="435" height="30"/>
@@ -1422,30 +1422,21 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="4Xh-VK-QGq" firstAttribute="centerY" secondItem="eeE-WG-6fa" secondAttribute="centerY" constant="2.5" id="TOq-7h-l3q"/>
+                                                    <constraint firstItem="4Xh-VK-QGq" firstAttribute="centerY" secondItem="eeE-WG-6fa" secondAttribute="centerY" constant="-3" id="TOq-7h-l3q"/>
                                                     <constraint firstItem="4Xh-VK-QGq" firstAttribute="leading" secondItem="eeE-WG-6fa" secondAttribute="leading" constant="27" id="USh-X5-MPp"/>
                                                     <constraint firstAttribute="trailing" secondItem="4Xh-VK-QGq" secondAttribute="trailing" constant="28" id="ekd-sW-ZXF"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="RRo-Qk-jHF" firstAttribute="height" secondItem="WWj-WX-dw6" secondAttribute="height" multiplier="0.1667" id="O2E-jQ-Ua0"/>
-                                            <constraint firstItem="nsO-1f-Kjg" firstAttribute="height" secondItem="WWj-WX-dw6" secondAttribute="height" multiplier="0.1667" id="e08-ld-XQi"/>
-                                            <constraint firstItem="tf4-CM-IbA" firstAttribute="height" secondItem="WWj-WX-dw6" secondAttribute="height" multiplier="0.1667" id="mda-eV-rr6"/>
-                                            <constraint firstItem="GBs-8i-bLu" firstAttribute="height" secondItem="WWj-WX-dw6" secondAttribute="height" multiplier="0.1667" id="pcN-yI-sob"/>
-                                            <constraint firstItem="a7t-Pf-9rj" firstAttribute="height" secondItem="WWj-WX-dw6" secondAttribute="height" multiplier="0.1667" id="ttH-ib-HQt"/>
+                                            <constraint firstAttribute="height" constant="536" id="zCH-rp-ayV"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="pcN-yI-sob"/>
-                                                <exclude reference="e08-ld-XQi"/>
-                                                <exclude reference="O2E-jQ-Ua0"/>
-                                                <exclude reference="mda-eV-rr6"/>
-                                                <exclude reference="ttH-ib-HQt"/>
-                                            </mask>
-                                        </variation>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WWj-WX-dw6" secondAttribute="bottom" id="Hwd-CW-n7h"/>
+                                    <constraint firstAttribute="trailing" secondItem="WWj-WX-dw6" secondAttribute="trailing" id="Xkl-e8-Obm"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1456,10 +1447,9 @@
                             <constraint firstAttribute="trailing" secondItem="HFi-2o-JZa" secondAttribute="trailing" id="NWk-fJ-Ayt"/>
                             <constraint firstItem="WWj-WX-dw6" firstAttribute="leading" secondItem="Hwp-Fb-x3a" secondAttribute="leadingMargin" constant="-20" id="QKj-yK-o6b"/>
                             <constraint firstItem="HFi-2o-JZa" firstAttribute="top" secondItem="Hwp-Fb-x3a" secondAttribute="top" id="Wou-rD-FXU"/>
-                            <constraint firstItem="7yy-r9-fkI" firstAttribute="top" secondItem="WWj-WX-dw6" secondAttribute="bottom" constant="-4" id="ZKl-q7-7gT"/>
                             <constraint firstItem="wjY-pm-te9" firstAttribute="leading" secondItem="Hwp-Fb-x3a" secondAttribute="leading" id="e3J-rj-hPy"/>
                             <constraint firstItem="wjY-pm-te9" firstAttribute="top" secondItem="HFi-2o-JZa" secondAttribute="bottom" id="s5L-4b-hjP"/>
-                            <constraint firstItem="WWj-WX-dw6" firstAttribute="top" secondItem="HFi-2o-JZa" secondAttribute="top" id="y4Q-tc-ULP"/>
+                            <constraint firstItem="WWj-WX-dw6" firstAttribute="top" secondItem="HFi-2o-JZa" secondAttribute="top" constant="64" id="y4Q-tc-ULP"/>
                             <constraint firstAttribute="trailing" secondItem="wjY-pm-te9" secondAttribute="trailing" id="zjy-mh-hjo"/>
                         </constraints>
                     </view>
@@ -1477,7 +1467,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hf8-a6-ABw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2181" y="181"/>
+            <point key="canvasLocation" x="1657" y="46"/>
         </scene>
     </scenes>
     <resources>

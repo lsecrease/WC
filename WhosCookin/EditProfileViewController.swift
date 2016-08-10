@@ -13,6 +13,8 @@ class EditProfileViewController: UIViewController {
     
     // MARK: - IBOutlet properties
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var kitchenNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -106,6 +108,27 @@ extension EditProfileViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(textField: UITextField) {
         
+        var offsetY = CGFloat()
+        
+        switch textField {
+            
+        case nameTextField:
+            offsetY = 100
+        case kitchenNameTextField:
+            offsetY = 150
+        case emailTextField:
+            offsetY = 200
+        case startTimeTextField, endTimeTextField:
+            offsetY = 250
+        case locationTextField:
+            offsetY = 300
+        case notifyTextField:
+            offsetY = 350
+        default:
+            break
+        }
+        
+        scrollView.setContentOffset(CGPoint(x: 0, y: offsetY), animated: true)
         
     }
     

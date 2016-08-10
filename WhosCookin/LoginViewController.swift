@@ -25,8 +25,37 @@ class LoginViewController: UIViewController {
         hideKeyboard()
     }
     
+    @IBAction func signInButtonPressed(sender: UIButton) {
+        
+        let username = emailTextField.text
+        let password = passwordTextField.text
+        
+        // Sample Validation
+        
+        if username?.characters.count < 5 {
+            
+            let alert = UIAlertController(title: "Error", message: "Please enter a valid email address.", preferredStyle: .Alert)
+            self.presentViewController(alert, animated: true, completion: nil)
+        
+        } else if password?.characters.count < 6 {
+            
+            let alert = UIAlertController(title: "Error", message: "Please enter a valid password", preferredStyle: .Alert)
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        } else {
+            let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 150, height: 150))
+            spinner.startAnimating()
+            
+            // Perform login with credentials
+            
+            
+        }
+        
+    }
+    
     @IBAction func signUpButtonPressed(sender: UIButton) {
         hideKeyboard()
+        
     }
     
     override func viewDidLoad() {
