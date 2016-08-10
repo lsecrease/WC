@@ -47,6 +47,7 @@
 		C065A2561D500AB90064F7B9 /* FilterLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */; };
 		C0D0F4E01D5B4C3100643B8E /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D0F4DF1D5B4C3100643B8E /* TextFieldTableViewCell.swift */; };
 		C0D0F4E21D5B5BE000643B8E /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D0F4E11D5B5BE000643B8E /* LocationTableViewCell.xib */; };
+		C0D0F5041D5B9DA600643B8E /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D0F5031D5B9DA600643B8E /* EditProfileViewController.swift */; };
 		C0DC24641D5A98B20034C169 /* UserScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DC24631D5A98B20034C169 /* UserScreens.storyboard */; };
 		C0E5988C1D51DF1400504856 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5988B1D51DF1400504856 /* CurrencyTextField.swift */; };
 		C0E5988E1D51F02B00504856 /* IntegerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5988D1D51F02B00504856 /* IntegerTextField.swift */; };
@@ -119,6 +120,7 @@
 		C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLayoutViewController.swift; sourceTree = "<group>"; };
 		C0D0F4DF1D5B4C3100643B8E /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		C0D0F4E11D5B5BE000643B8E /* LocationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
+		C0D0F5031D5B9DA600643B8E /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		C0DC24631D5A98B20034C169 /* UserScreens.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserScreens.storyboard; sourceTree = "<group>"; };
 		C0E5988B1D51DF1400504856 /* CurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		C0E5988D1D51F02B00504856 /* IntegerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerTextField.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		C065A2371D4FF3B80064F7B9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C0D0F5031D5B9DA600643B8E /* EditProfileViewController.swift */,
 				C065A23C1D4FF3E40064F7B9 /* FoodCategoryViewController.swift */,
 				C065A23D1D4FF3E40064F7B9 /* LocationSearchViewController.swift */,
 				C065A23F1D4FF3E40064F7B9 /* LoginViewController.swift */,
@@ -596,6 +599,7 @@
 				C065A2501D4FF3E40064F7B9 /* AddNewDishViewController.swift in Sources */,
 				C065A23B1D4FF3D60064F7B9 /* HomeTableViewController.swift in Sources */,
 				C065A21C1D4FF2E40064F7B9 /* FeedTableViewCell.swift in Sources */,
+				C0D0F5041D5B9DA600643B8E /* EditProfileViewController.swift in Sources */,
 				C065A21F1D4FF2E40064F7B9 /* MealInventoryTableViewCell.swift in Sources */,
 				C065A24D1D4FF3E40064F7B9 /* PendingOrderDetailViewController.swift in Sources */,
 				C065A2201D4FF2E40064F7B9 /* FilterLayoutTableViewCell.swift in Sources */,

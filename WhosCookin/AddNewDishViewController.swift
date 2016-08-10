@@ -24,7 +24,6 @@ class AddNewDishViewController: UIViewController {
 
     @IBOutlet weak var arrowImageView: UIImageView!
     
-    let actionToolbar = ActionToolbar()
     var currentY: CGFloat = 0
     
     // Picker Views

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Du9-6y-Tw3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -954,10 +954,10 @@
             </objects>
             <point key="canvasLocation" x="-11" y="-752"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Profile View Controller-->
         <scene sceneID="5BI-uZ-kMa">
             <objects>
-                <viewController id="Du9-6y-Tw3" customClass="ViewController" customModule="EditProfileScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Du9-6y-Tw3" customClass="EditProfileViewController" customModule="WhosCookin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bxp-QS-vd4"/>
                         <viewControllerLayoutGuide type="bottom" id="7yy-r9-fkI"/>
@@ -972,7 +972,7 @@
                                     <constraint firstAttribute="height" constant="64" id="Qhd-hb-9sL"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="ILn-tb-Tlb"/>
+                                    <navigationItem title="Edit Profile" id="ILn-tb-Tlb"/>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-WX-dw6">
@@ -1015,6 +1015,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="namePhonePad"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="Du9-6y-Tw3" id="zkC-yt-Poj"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1067,6 +1070,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="namePhonePad"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="Du9-6y-Tw3" id="abb-4k-8vK"/>
+                                                        </connections>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KITCHEN NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLK-M7-cJt">
                                                         <rect key="frame" x="0.0" y="0.0" width="75" height="14"/>
@@ -1139,6 +1145,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="namePhonePad"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="Du9-6y-Tw3" id="NbL-VD-ckd"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1170,7 +1179,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkX-bs-s83" userLabel="Username Area">
                                                 <rect key="frame" x="310" y="17.5" width="262" height="53"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i1-s4-emd" customClass="TextFieldHeaderLabel" customModule="EditProfileScreen" customModuleProvider="target">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i1-s4-emd" customClass="TextFieldHeaderLabel" customModule="WhosCookin" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="67" height="14"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="67" id="Tud-pd-SdE"/>
@@ -1187,13 +1196,16 @@
                                                             <constraint firstAttribute="height" constant="1" id="CKS-k5-ar8"/>
                                                         </constraints>
                                                     </view>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rjF-kw-8kB" customClass="IntegerTextField" customModule="EditProfileScreen" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rjF-kw-8kB" customClass="IntegerTextField" customModule="WhosCookin" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="19" width="262" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="gTi-dd-1BQ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="Du9-6y-Tw3" id="qEf-MC-K5I"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1213,13 +1225,16 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ev-Nf-NrC" userLabel="Username Area">
                                                 <rect key="frame" x="28" y="17.5" width="262" height="53"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTX-18-SuG" customClass="CurrencyTextField" customModule="EditProfileScreen" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTX-18-SuG" customClass="CurrencyTextField" customModule="WhosCookin" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="19" width="262" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="QbC-t9-jgw"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="Du9-6y-Tw3" id="lOm-IF-H1p"/>
+                                                        </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYL-yd-fzQ" userLabel="Line">
                                                         <rect key="frame" x="0.0" y="54" width="262" height="1"/>
@@ -1289,6 +1304,7 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPS-df-QdB" userLabel="Location Button">
                                                         <rect key="frame" x="517" y="15" width="20" height="30"/>
+                                                        <color key="backgroundColor" red="0.35137432813644409" green="0.82300287485122681" blue="0.75891906023025513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="8tG-1B-C9N"/>
                                                             <constraint firstAttribute="height" constant="30" id="trd-Fj-qj3"/>
@@ -1301,6 +1317,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="namePhonePad"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="Du9-6y-Tw3" id="cE5-N4-TdG"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1339,6 +1358,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="Du9-6y-Tw3" id="cub-Xu-ZsX"/>
+                                                        </connections>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTIFY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSk-Hs-D22">
                                                         <rect key="frame" x="0.0" y="0.0" width="67" height="14"/>
@@ -1372,6 +1394,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="Du9-6y-Tw3" id="Rkx-wM-RYT"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1407,6 +1432,15 @@
                                     <constraint firstItem="GBs-8i-bLu" firstAttribute="height" secondItem="WWj-WX-dw6" secondAttribute="height" multiplier="0.1667" id="pcN-yI-sob"/>
                                     <constraint firstItem="a7t-Pf-9rj" firstAttribute="height" secondItem="WWj-WX-dw6" secondAttribute="height" multiplier="0.1667" id="ttH-ib-HQt"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pcN-yI-sob"/>
+                                        <exclude reference="e08-ld-XQi"/>
+                                        <exclude reference="O2E-jQ-Ua0"/>
+                                        <exclude reference="mda-eV-rr6"/>
+                                        <exclude reference="ttH-ib-HQt"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1421,10 +1455,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nxw-os-erw"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="N3A-V5-kes" id="R6B-nZ-2Nx"/>
+                        <outlet property="endTimeTextField" destination="rjF-kw-8kB" id="UHp-Xv-vp3"/>
+                        <outlet property="kitchenNameTextField" destination="Yx6-oH-BLM" id="hBp-f5-SNJ"/>
+                        <outlet property="locationTextField" destination="2T4-oy-fjB" id="ZDX-ce-o4r"/>
+                        <outlet property="nameTextField" destination="0dn-hi-2SB" id="RDd-0j-Tha"/>
+                        <outlet property="notifyMethodTextField" destination="LLB-AI-aAh" id="Ilb-a0-SZf"/>
+                        <outlet property="notifyTextField" destination="VCa-eu-eIV" id="XgC-6E-9et"/>
+                        <outlet property="startTimeTextField" destination="aTX-18-SuG" id="XF8-hV-5h1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hf8-a6-ABw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1882" y="364"/>
+            <point key="canvasLocation" x="2082" y="314"/>
         </scene>
     </scenes>
     <resources>
