@@ -25,6 +25,7 @@ class AddNewDishViewController: UIViewController {
     @IBOutlet weak var arrowImageView: UIImageView!
     
     let actionToolbar = ActionToolbar()
+    var currentY: CGFloat = 0
     
     // Picker Views
     var currentButton: UIButton?
@@ -38,7 +39,7 @@ class AddNewDishViewController: UIViewController {
     
     var prepTimePicker = UIPickerView()
     var times = [String]()
-    let timeMeasures = ["Minutes", "Hours"]
+    let timeUnits = ["Minutes", "Hours"]
     let maxTime = 60
     
     
@@ -51,11 +52,11 @@ class AddNewDishViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        addObservers()
+        currentY = self.view.frame.origin.y
+        
+        // addObservers()
         addButtonBorders()
         configurePickerViews()
-        
-        
         
         dateTextField.addActionToolbar()
         priceTextField.addActionToolbar()
@@ -79,10 +80,11 @@ class AddNewDishViewController: UIViewController {
         datePicker.locale = NSLocale.currentLocale()
         datePicker.minuteInterval = 15
         datePicker.minimumDate = NSDate()
+        datePicker.addTarget(self, action: #selector(self.setDate), forControlEvents: .ValueChanged)
         dateTextField.inputView = datePicker
         
-        addTimes()
         prepTimePicker = UIPickerView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
+        addTimes()
         prepTimePicker.delegate = self
         prepTimePicker.dataSource = self
         prepTimeTextField.inputView = prepTimePicker
@@ -92,6 +94,19 @@ class AddNewDishViewController: UIViewController {
         categoryPicker.dataSource = self
         categoryTextField.inputView = categoryPicker
         
+    }
+    
+    func setDate() {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
+        dateTextField.text = dateFormatter.stringFromDate(datePicker.date)
+    }
+    
+    func updatePrepTime() {
+        let timeString = times[prepTimePicker.selectedRowInComponent(0)]
+        let unitString = timeUnits[prepTimePicker.selectedRowInComponent(1)]
+        
+        prepTimeTextField.text = timeString + " " + unitString
     }
     
     func addButtonBorders() {
@@ -108,27 +123,6 @@ class AddNewDishViewController: UIViewController {
 
     }
     
-    func addObservers() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AddNewDishViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AddNewDishViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
-    }
-    
-    func removeObservers() {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
-    }
-    
-    func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
-            self.view.frame.origin.y -= keyboardSize.height - 60.0
-        }
-    }
-    
-    func keyboardWillHide(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
-            self.view.frame.origin.y += keyboardSize.height - 60.0
-        }
-    }
-
     
 }
 
@@ -136,25 +130,34 @@ class AddNewDishViewController: UIViewController {
 
 extension AddNewDishViewController: UITextFieldDelegate {
     
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        var offsetY: CGFloat!
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        
+        
+        var offsetY = CGFloat()
         
         switch textField {
         case dateTextField:
             offsetY = 100
         case priceTextField, quantityTextField:
             offsetY = 150
+        case locationTextField, prepTimeTextField, categoryTextField:
+            offsetY = 200
             
         default:
             break
         }
         
         scrollView.setContentOffset(CGPoint(x: 0, y: offsetY), animated: true)
-
         
-        return true
     }
-        
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        self.resignFirstResponder()
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+
+    }
+    
 }
 
 // MARK: - UIPickerView Delegate methods
@@ -190,7 +193,7 @@ extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate
             case 0:
                 return times.count
             case 1:
-                return timeMeasures.count
+                return timeUnits.count
             default:
                 break
             }
@@ -215,7 +218,7 @@ extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate
             case 0:
                 return times[row]
             case 1:
-                return timeMeasures[row]
+                return timeUnits[row]
             default:
                 break
             }
@@ -228,6 +231,25 @@ extension AddNewDishViewController: UIPickerViewDataSource, UIPickerViewDelegate
         }
         
         return ""
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        
+        switch pickerView {
+            
+        case prepTimePicker:
+            
+            updatePrepTime()
+            
+        case categoryPicker:
+            
+            categoryTextField.text = categories[row]
+            
+        default:
+            break
+        }
+        
     }
     
 }

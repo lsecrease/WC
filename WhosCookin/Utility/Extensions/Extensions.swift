@@ -49,6 +49,7 @@ extension UITextField {
     func clearAndHideKeyboard() {
         self.text = ""
         self.resignFirstResponder()
+        
     }
 
     

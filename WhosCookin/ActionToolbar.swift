@@ -8,10 +8,10 @@
 
 import UIKit
 
-//protocol ActionToolbarDelegate {
-//    func cancelButtonPressed()
-//    func doneButtonPressed()
-//}
+protocol ActionToolbarDelegate {
+    func cancelButtonPressed()
+    func donePressed()
+}
 
 class ActionToolbar: UIToolbar {
     
@@ -24,6 +24,10 @@ class ActionToolbar: UIToolbar {
     
     @IBAction func doneButtonPressed(sender: UIBarButtonItem) {
         superview?.resignFirstResponder()
+    }
+    
+    func donePressed() {
+
     }
     
 }
