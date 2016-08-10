@@ -39,7 +39,8 @@ class EditProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        configurePickerViews()
+        configureViews()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +50,13 @@ class EditProfileViewController: UIViewController {
     
     
     // MARK: - Custom functions
+    
+    func configureViews() {
+        
+        configureTextFields()
+        configurePickerViews()
+        
+    }
     
     func configureTextFields() {
         nameTextField.addActionToolbar()
@@ -92,6 +100,15 @@ class EditProfileViewController: UIViewController {
     }
 
 
+}
+
+extension EditProfileViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        
+        
+    }
+    
 }
 
 
