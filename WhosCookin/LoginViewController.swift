@@ -53,6 +53,10 @@ class LoginViewController: UIViewController {
         
     }
     
+    @IBAction func unwindToLoginScreen(segue: UIStoryboardSegue) {
+        
+    }
+    
     @IBAction func signUpButtonPressed(sender: UIButton) {
         hideKeyboard()
         

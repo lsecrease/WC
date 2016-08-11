@@ -15,8 +15,7 @@ enum Filters: Int {
     static let count = 3
     
     var imageName: String {
-        let imageNames = ["pot.png", "chicken.png", "Pin-1.png"
-        ]
+        let imageNames = ["pot.png", "chicken.png", "Pin-1.png"]
         return imageNames[rawValue]
     }
     

@@ -45,6 +45,7 @@
 		C065A2501D4FF3E40064F7B9 /* AddNewDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */; };
 		C065A2541D4FF41E0064F7B9 /* KDCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */; };
 		C065A2561D500AB90064F7B9 /* FilterLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */; };
+		C08B3B5C1D5C7C7100734A64 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B3B5B1D5C7C7100734A64 /* Models.swift */; };
 		C0D0F4E01D5B4C3100643B8E /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D0F4DF1D5B4C3100643B8E /* TextFieldTableViewCell.swift */; };
 		C0D0F4E21D5B5BE000643B8E /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D0F4E11D5B5BE000643B8E /* LocationTableViewCell.xib */; };
 		C0D0F5041D5B9DA600643B8E /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D0F5031D5B9DA600643B8E /* EditProfileViewController.swift */; };
@@ -118,6 +119,7 @@
 		C065A2451D4FF3E40064F7B9 /* AddNewDishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewDishViewController.swift; sourceTree = "<group>"; };
 		C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgressView.swift; sourceTree = "<group>"; };
 		C065A2551D500AB90064F7B9 /* FilterLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLayoutViewController.swift; sourceTree = "<group>"; };
+		C08B3B5B1D5C7C7100734A64 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		C0D0F4DF1D5B4C3100643B8E /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		C0D0F4E11D5B5BE000643B8E /* LocationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
 		C0D0F5031D5B9DA600643B8E /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		C03291061D439D2B00798825 /* WhosCookin */ = {
 			isa = PBXGroup;
 			children = (
+				C08B3B5A1D5C7C4600734A64 /* Models */,
 				C0F784811D454B3000E982E7 /* Views */,
 				C065A2351D4FF37B0064F7B9 /* Controllers */,
 				C0F7849C1D45503F00E982E7 /* Utility */,
@@ -270,6 +273,14 @@
 				C065A2531D4FF41E0064F7B9 /* KDCircularProgressView.swift */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C08B3B5A1D5C7C4600734A64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C08B3B5B1D5C7C7100734A64 /* Models.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		C0E5988A1D51DE9700504856 /* Custom Classes */ = {
@@ -605,6 +616,7 @@
 				C065A2201D4FF2E40064F7B9 /* FilterLayoutTableViewCell.swift in Sources */,
 				C065A24C1D4FF3E40064F7B9 /* OrderViewController.swift in Sources */,
 				C065A2481D4FF3E40064F7B9 /* LocationSearchViewController.swift in Sources */,
+				C08B3B5C1D5C7C7100734A64 /* Models.swift in Sources */,
 				C0F784A11D4550B900E982E7 /* Extensions.swift in Sources */,
 				C065A2191D4FF2E40064F7B9 /* FoodCategoryCollectionViewCell.swift in Sources */,
 			);

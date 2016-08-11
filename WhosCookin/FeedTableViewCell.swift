@@ -19,6 +19,7 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var foodPriceLabel: UILabel!
     @IBOutlet weak var container: UIView!
     
+    let lightGray = UIColor.lightGrayColor()
 
     
     // MARK: - Cell properties
@@ -31,7 +32,14 @@ class FeedTableViewCell: UITableViewCell {
     
     var distance = "" {
         didSet {
-            distanceLabel.text = distance
+            
+            let endString = " miles"
+            let location = distance.characters.count
+            let length = endString.characters.count
+            let distanceString = distance + endString
+            let mutableDistanceString = NSMutableAttributedString(string: distanceString)
+            mutableDistanceString.addAttribute(NSForegroundColorAttributeName, value: lightGray, range: NSRange(location: location, length: length))
+            distanceLabel.attributedText = mutableDistanceString
         }
     }
 
@@ -43,7 +51,14 @@ class FeedTableViewCell: UITableViewCell {
     
     var rating = "" {
         didSet {
-            ratingLabel.text = rating
+            let endString = " rating"
+            let location = rating.characters.count
+            let length = endString.characters.count
+            let ratingString = rating + endString
+            let mutableRatingString = NSMutableAttributedString(string: ratingString)
+            mutableRatingString.addAttribute(NSForegroundColorAttributeName, value: lightGray, range: NSRange(location: location, length: length))
+            ratingLabel.attributedText = mutableRatingString
+            
         }
     }
     
