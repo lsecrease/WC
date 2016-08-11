@@ -501,6 +501,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-oD-U6S">
                                 <rect key="frame" x="0.0" y="60" width="600" height="491"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="491" id="yE9-d5-cK9"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellFeed" id="EIq-ll-HYL" customClass="FeedTableViewCell" customModule="WhosCookin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
@@ -541,7 +544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQv-2z-Enm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="-79"/>
+            <point key="canvasLocation" x="407" y="-711"/>
         </scene>
         <!--Home Table View Controller-->
         <scene sceneID="LQn-R3-4gT">

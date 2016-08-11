@@ -9,12 +9,26 @@
 import Foundation
 
 struct FeedItem {
-    let name: String
+    let food: Food
     let distance: String
-    let price: String
     let rating: String
+    let price: String
 }
 
-struct MealDetail {
-    
+struct User {
+    let id: String
+    let fullName: String
+    let email: String
+    let password: String
+}
+
+struct Food {
+    let name: String
+    let price: String
+    let imageName: String?
+}
+
+struct Order {
+    let food: Food
+    let quantity: Int
 }
