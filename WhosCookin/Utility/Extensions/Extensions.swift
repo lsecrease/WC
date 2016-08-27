@@ -51,6 +51,19 @@ extension UITextField {
         self.resignFirstResponder()
         
     }
+    
+    func addBottomBorder() {
+        
+        let bottomBorder = CALayer()
+        let bottomBorderWidth = CGFloat(1.0)
+        
+        bottomBorder.frame = CGRect(x: 0.0, y: self.frame.size.height - bottomBorderWidth, width: self.frame.size.width, height: self.frame.size.height)
+        bottomBorder.borderColor = UIColor.darkGrayColor().CGColor
+        bottomBorder.borderWidth = bottomBorderWidth
+        self.layer.addSublayer(bottomBorder)
+        self.layer.masksToBounds = true
+
+    }
 
     
 }

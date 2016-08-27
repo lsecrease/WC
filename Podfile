@@ -8,5 +8,6 @@ target 'WhosCookin' do
   # Pods for WhosCookin
 
 pod "XMSegmentedControl"
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 
 end

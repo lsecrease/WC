@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Spring.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>XMSegmentedControl-XMSegmentedControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4E8973A864A96C70FB6052C7C442C473</key>
+		<key>080B3D20E8E8E782D7BC2FA463E03871</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8470740CE4DF734D3947D979E782D1F8</key>
+		<key>2282150C54074163D544AC829B375BD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EED6CCEDDDE5A1CD73F001D2AD712DEE</key>
+		<key>6B15FA2431ADD6C7FD374A7B419BC1A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4520BCE4CADFD2FFE63150631B845BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
